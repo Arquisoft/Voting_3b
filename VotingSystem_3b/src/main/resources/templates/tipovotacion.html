@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+<meta charset="UTF-8" />
+<link href="../static/css/voting.css" th:href="@{/css/voting.css}"
+	rel="stylesheet" />
+</head>
+<body>
+	<div class="header" th:fragment="cabecera">
+		<h1>Voting System</h1>
+		<h2>ELEGIR TIPO DE VOTACIÓN DE USUARIO</h2>
+	</div>
+
+   	 <form id="form_votacion" action="#" th:action="@{/typeVote}" th:object="${voto}" method="post" >
+
+		<label for="nif">NIF: </label>
+		<input id="nif" type="text" th:field="*{nif}" />
+		
+
+		<label for="tipoVoto">Tipo voto: </label>
+		<input id="tipoVoto" type="text" th:field="*{tipoVoto}"/>
+	
+	
+		<br />	
+		<p>Valores: FISICO/WEB</p>
+		<br />	
+		
+		
+		<button type="submit">Enviar</button>
+
+	</form>
+   	 
+   	 
+   	 
+   	 
+   	 
+   	 
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html xmlns:th="http://www.thymeleaf.org"> 
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/voting.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'/>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
+        <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+            
+
+            
+            function drawChart() {
+               
+                var si = document.getElementById("votosSi").textContent;
+                var no =  document.getElementById("votosNo").textContent;
+                var bl =  document.getElementById("votosBlanco").textContent;
+                
+                var data = google.visualization.arrayToDataTable([
+                    ['Opción', 'Número de votos'],
+                    ['Sí',si],
+                    ['No',no],
+                    ['En blanco',bl]]);
+                   
+                var options = {
+                    title: 'Resultados Referendum'
+                };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+                chart.draw(data, options);
+      }
+            
+    </script>
+    </head>
+<body>
+        <div id="piechart" width="300" height="300">
+        </div>
+           
+
+        
+    <div id="d_table">
+        <table>
+            <h2>Resultados votaciones</h2>
+                <tr th:each="voto: ${votos}">
+                    <td id="idVoto" th:text="${voto.key}">Votantes</td>	
+                    <td id="idVoto" th:text="${voto.value}">Votantes</td>	      
+                </tr>
+        </table>
+        <table hidden="true">
+            <tr>
+                <td id="votosSi" th:text="${votos['SI']}">"${votos['SI']}"</td>
+                <td id="votosNo" th:text="${votos['NO']}">"${votos['NO']}"</td>
+                <td id="votosBlanco" th:text="${votos['BLANCO']}">"${votos['BLANCO']}"</td>
+            </tr>
+        </table>
+    </div>
+    <div id="idParticipacion">
+        <table>
+            <tr><td>Participacion: </td><td th:text="${participacion}"></td><td> %</td></tr>
+        </table>
+    </div>
+    <div id="div_ciudades">
+        <form style="display:inline-block" th:action="statisticsCiudad" th:object="${ciudades}" th:method="post">
+        <select id="optionsList" name="optionsListId">
+            <option th:each="option : ${ciudades}" th:value="${option.getOption()}"
+                    th:text="${option.getOptionName()}">Options</option>
+        </select>
+            <button type="submit" value="Search">Ver votos</button>
+        </form>
+        
+    </div>
+    <div id="div_comunidades">
+        <form style="display:inline-block" th:action="statisticsComunidad" th:object="${comunidades}" th:method="post">
+        <select id="optionsList" name="optionsListId">
+            <option th:each="option : ${comunidades}" th:value="${option.getOption()}"
+                    th:text="${option.getOptionName()}">Options</option>
+        </select>
+            <button type="submit" value="Search">Ver votos</button>
+        </form>
+    </div>
+    <div id="div_estado">
+        <form th:action="statistics" method="post">
+            <button type="submit">Resultados nacionales</button>
+        </form>
+    </div>
+    
+</body> 
+    
+
+
+</html>

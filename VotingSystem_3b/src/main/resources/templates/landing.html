@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+
+</head>
+<body>
+	<div th:replace="fragments/header :: cabecera"></div>
+
+	<div class="form-group">
+		<form action="/user" method="post" class="form-horizontal">
+			<button type="submit" class="btn btn-primary">Pagina votacion usuario</button>
+		</form>
+
+		<br />
+
+		<form action="/admin" method="post" class="form-horizontal">
+			<button type="submit" class="btn btn-primary">Pagina admin</button>
+		</form>
+
+		
+	</div>
+
+</body>
+</html>

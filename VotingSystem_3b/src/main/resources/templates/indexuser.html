@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head">
+
+</head>
+<body>
+	<h1>Voting System - Pagina Usuario</h1>
+
+	<div class="form-group">
+		<form action="/usertipo" method="post" class="form-horizontal">
+			<button type="submit" class="btn btn-primary">Registrar tipo de voto*</button>
+			<p>*Para poder votar a traves de la web es necesario indicarlo antes a traves de este enlace.</p>
+		</form>
+		<br/>
+		<form action="/formulario" method="post" class="form-horizontal">
+			<button type="submit" class="btn btn-primary">Realizar votacion</button>
+		</form>		
+	</div>
+
+</body>
+</html>

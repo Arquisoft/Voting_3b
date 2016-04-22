@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+<meta charset="UTF-8" />
+<link href="../static/css/voting.css" th:href="@{/css/voting.css}"
+	rel="stylesheet" />
+</head>
+<body>
+	<div class="header" th:fragment="cabecera">
+		<h1>Voting System</h1>
+		<h2>
+			<span th:text="${resultado}"></span>
+		</h2>
+		
+		<form action="/" method="post" class="form-horizontal">
+			<button type="submit" class="btn btn-primary">Inicio</button>
+		</form>
+	</div>
+</body>
+</html>
