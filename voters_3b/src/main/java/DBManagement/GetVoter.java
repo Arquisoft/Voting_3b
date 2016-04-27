@@ -1,10 +1,13 @@
 package DBManagement;
 
 import hello.UserNotFoundException;
-import hello.UserInfo;
+
+import java.sql.SQLException;
+
+import DBManagement.model.PersonaData;
 
 public interface GetVoter {
 	
-	UserInfo findByEmailAndPassword(String email, String password)  throws UserNotFoundException ;
+	PersonaData findByEmailAndPassword(String email, String password)  throws UserNotFoundException, SQLException ;
 
 }

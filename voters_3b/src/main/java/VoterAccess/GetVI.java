@@ -1,24 +1,26 @@
 package VoterAccess;
 
 import hello.UserNotFoundException;
-import hello.UserInfo;
+
+import java.sql.SQLException;
+
+import DBManagement.model.PersonaData;
 
 /*Hace la validación del usuario*/
-public class GetVI implements GetVoterInfo{
+public class GetVI implements GetVoterInfo {
 
 	@Override
-	public UserInfo getVoter(String email, String password) throws UserNotFoundException, EmailNotFoundException {
+	public PersonaData getVoter(String email, String password) throws UserNotFoundException, EmailNotFoundException {
 		// TODO Auto-generated method stub
-		UserInfo ui;
-		if(!ValidadorEmail.validateEmail(email))
+		PersonaData ui = null;
+		if (!ValidadorEmail.validateEmail(email))
 			throw new EmailNotFoundException();
-		try{
+		try {
 			ui = ServicesFactory.getVoterService().findByEmailAndPassword(email, password);
-		}catch(RuntimeException e){
-			throw new UserNotFoundException();
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
 		return ui;
 	}
-
 
 }

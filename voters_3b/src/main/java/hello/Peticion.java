@@ -24,4 +24,7 @@ public class Peticion {
 		this.password = password;
 	}
 	
+	public Peticion(){
+		
+	}
 }
