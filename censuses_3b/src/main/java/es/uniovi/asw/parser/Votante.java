@@ -5,7 +5,7 @@ public class Votante {
 	private String nombre;
 	private String NIF;
 	private String email;
-	private int codColegioElectoral;
+	private String codColegioElectoral;
 	private String password;
 	
 	public Votante(){
@@ -13,7 +13,7 @@ public class Votante {
 	}
 	
 	public Votante(String nombre, String nIF, String email,
-			int codColegioElectoral, String password) {
+			String codColegioElectoral, String password) {
 		super();
 		this.nombre = nombre;
 		NIF = nIF;
@@ -53,12 +53,12 @@ public class Votante {
 	}
 
 
-	public int getCodColegioElectoral() {
+	public String getCodColegioElectoral() {
 		return codColegioElectoral;
 	}
 
 
-	public void setCodColegioElectoral(int codColegioElectoral) {
+	public void setCodColegioElectoral(String codColegioElectoral) {
 		this.codColegioElectoral = codColegioElectoral;
 	}
 

@@ -20,7 +20,7 @@ public class WReportR {
 	public boolean validarVotante(Votante v) {
 		String datos = "ERROR: En el votante ";
 		if (!v.getNombre().isEmpty() && !v.getNIF().isEmpty()
-				&& !v.getEmail().isEmpty() && v.getCodColegioElectoral() >= 0
+				&& !v.getEmail().isEmpty() && !v.getCodColegioElectoral().isEmpty()
 				&& !v.getPassword().isEmpty()) {		
 			return true;
 		} else {
@@ -36,7 +36,7 @@ public class WReportR {
 				datos = datos + "Email incorrecto;";
 			if (v.getPassword().isEmpty()) 
 				datos = datos + "Contraseña incorrecta;";
-			if (v.getCodColegioElectoral() < 0) 
+			if (v.getCodColegioElectoral().isEmpty()) 
 				datos = datos + "Cod Colegio electoral incorrecto;";	
 			report.setLog(datos);
 			return false;

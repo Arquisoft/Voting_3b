@@ -19,7 +19,7 @@ public class VotantesPersImpl implements VotantesPers{
 		Connection c ;
 		String error = "";
 		
-		if(reportR.validarVotante(v)){
+		//if(reportR.validarVotante(v)){
 			try {
 				c = Jdbc.getConnection();
 				PreparedStatement ps = c
@@ -27,7 +27,7 @@ public class VotantesPersImpl implements VotantesPers{
 				ps.setString(1, v.getNombre());
 				ps.setString(2, v.getNIF());
 				ps.setString(3, v.getEmail());
-				ps.setInt(4, v.getCodColegioElectoral());
+				ps.setString(4, v.getCodColegioElectoral());
 				ps.setString(5, v.getPassword());
 				ps.execute();
 				
@@ -43,7 +43,7 @@ public class VotantesPersImpl implements VotantesPers{
 				error = error + " no se ha podido cargar correctamente en la base de datos.";
 				reportR.setLog("ERROR: " + error);
 			}
-		}
+		//}
 	}
 	
 	@Override
@@ -58,7 +58,7 @@ public class VotantesPersImpl implements VotantesPers{
 			rs = ps.executeQuery();
 
 			if (rs.next()) {
-				v = new Votante(rs.getString(2), rs.getString(3), rs.getString(4), Integer.parseInt(rs.getString(5)), rs.getString(6));
+				v = new Votante(rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6));
 			}
 			
 			
@@ -104,7 +104,7 @@ public class VotantesPersImpl implements VotantesPers{
 			ResultSet rs = ps.executeQuery();
 			
 			while(rs.next()){
-				votantes.add(new Votante(rs.getString(2), rs.getString(3), rs.getString(4), Integer.parseInt(rs.getString(5)), rs.getString(6)));
+				votantes.add(new Votante(rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6)));
 			
 				//System.out.println("ID: " +rs.getLong(1) + " NOMBRE: " + rs.getString(2) + " NIF: " + rs.getString(3) + " EMAIL: " + rs.getString(4) + " CÓDIGO COLEGIO ELECTORAL: " + rs.getString(5) + " CONTRASEÑA " + rs.getString(6) );
 			}

@@ -75,7 +75,7 @@ public void DBUpdate1() {
 		InsertP insertP = new InsertP(report);
 		
 		//Creamos un nuevo votante
-		Votante v = new Votante("Pedro Garcia", "56982104R", "pedro@gmail.com", 5698, "ghyts52?");
+		Votante v = new Votante("Pedro Garcia", "56982104R", "pedro@gmail.com", "AST001", "ghyts52?");
 		//Lo insertamos en la base de datos
 		insertP.insertar(v);
 		Votante v2 = PersistenceFactory.getVotantesPers().findVotante(v.getNIF());
@@ -106,11 +106,11 @@ public void DBUpdate2() {
 	
 	//Creamos varios votantes con errores
 	ArrayList<Votante> list = new ArrayList<Votante>();
-	list.add(new Votante("", "56933104R", "pedro@gmail.com", 54, "ghyts52?"));
-	list.add(new Votante("Carmen", "", "carmen@gmail.com", 54, "alsjd85?"));
-	list.add(new Votante("Pablo", "89641208G", "", 54, "alsjd85?"));
-	list.add(new Votante("Javi", "85214236T", "javi@gmail.com", -8, "liksj67("));
-	list.add(new Votante("Javi", "85214236T", "javi@gmail.com", 86, ""));
+	list.add(new Votante("", "56933104R", "pedro@gmail.com", "AST001", "ghyts52?"));
+	list.add(new Votante("Carmen", "", "carmen@gmail.com", "AST001", "alsjd85?"));
+	list.add(new Votante("Pablo", "89641208G", "", "AST001", "alsjd85?"));
+	list.add(new Votante("Javi", "85214236T", "javi@gmail.com", "", "liksj67(")); //Cambios para que coincida el tipo de dato VARCHAR
+	list.add(new Votante("Javi", "85214236T", "javi@gmail.com", "AST001", ""));
 	
 	Votante v3;
 	for(Votante vot: list){
@@ -126,7 +126,7 @@ public void DBUpdate2() {
 
 @Test
 public void Persistence(){
-	Votante v = new Votante("Pedro Garcia", "56982104R", "pedro@gmail.com", 5698, "ghyts52?");
+	Votante v = new Votante("Pedro Garcia", "56982104R", "pedro@gmail.com", "AST001", "ghyts52?");
 	PersistenceFactory.getVotantesPers().insert(v, new WReportR(new WReportP()));
 	Votante v2 = PersistenceFactory.getVotantesPers().findVotante("56982104R");
 	assertEquals(v.toString(), v2.toString());
@@ -171,7 +171,7 @@ public void TestVotante(){
 	v.setNombre("Pablo");
 	v.setNIF("665151G");
 	v.setEmail("Pablo@gmail.com");
-	v.setCodColegioElectoral(55);
+	v.setCodColegioElectoral("AST001");
 	v.setPassword("kasnfkf56&");
 	String vot = v.toString();
 	String vot2 = "Votante [nombre=" + v.getNombre() + ", NIF=" + v.getNIF() + ", email=" + v.getEmail() 
@@ -190,14 +190,14 @@ public void RCensusTest() {
 	assertEquals(mapa.get(0).get(0), "Juan Torres Pardo");
 	assertEquals(mapa.get(0).get(1), "90500084Y");
 	assertEquals(mapa.get(1).get(0), "Luis López Fernando");
-	assertEquals(mapa.get(1).get(3), "345.0");
+	assertEquals(mapa.get(1).get(3), "AST001");
 	assertEquals(mapa.get(2).get(0), "Ana Torres Pardo");
 	
 }
 
 @Test
 public void CartaTXT() {
-	Votante v = new Votante("Pedro Garcia", "58622104P", "pedro@gmail.com", 5698, "ghyts52?");
+	Votante v = new Votante("Pedro Garcia", "58622104P", "pedro@gmail.com", "AST001", "ghyts52?");
 	
 	//La carta aun no existe
 	String ruta = "src/test/resources/cartas/58622104P.txt";
@@ -217,7 +217,7 @@ public void CartaTXT() {
 
 @Test
 public void CartaPDF() {
-	Votante v = new Votante("Pedro Garcia", "58622104S", "pedro@gmail.com", 5698, "ghyts52?");
+	Votante v = new Votante("Pedro Garcia", "58622104S", "pedro@gmail.com", "AST001", "ghyts52?");
 	
 	//La carta aun no existe
 	String ruta = "src/test/resources/cartas/58622104S.pdf";
@@ -242,10 +242,10 @@ public void WriteReport(){
 	
 	//Creamos varios votantes con errores
 	ArrayList<Votante> list = new ArrayList<Votante>();
-	list.add(new Votante("Pedro", "56788104R", "pedro@gmail.com", 54, "ghyts52?"));
-	list.add(new Votante("Carmen", "96458545Y", "carmen@gmail.com", 54, "alsjd85?"));
-	list.add(new Votante("Pablo", "896651208G", "pablo@gmail.com", 54, "alsjd85?"));
-	list.add(new Votante("Javi", "852344236S", "javi@gmail.com", 568, "liksj67("));
+	list.add(new Votante("Pedro", "56788104R", "pedro@gmail.com", "AST001", "ghyts52?"));
+	list.add(new Votante("Carmen", "96458545Y", "carmen@gmail.com", "AST001", "alsjd85?"));
+	list.add(new Votante("Pablo", "896651208G", "pablo@gmail.com", "AST001", "alsjd85?"));
+	list.add(new Votante("Javi", "852344236S", "javi@gmail.com", "AST001", "liksj67("));
 	for(Votante vot: list){
 		insertP.insertar(vot);
 	}
