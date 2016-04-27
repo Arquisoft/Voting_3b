@@ -5,6 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import org.h2.jdbc.JdbcConnection;
+import org.hsqldb.jdbc.JDBCDriver;
+
 import DBManagement.model.PersonaData;
 import hello.UserNotFoundException;
 
