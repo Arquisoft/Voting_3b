@@ -1,6 +1,5 @@
 package hello;
 
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -27,7 +26,7 @@ public class MainController {
 		return mv;
 	}
 
-	@RequestMapping(value = "/user", method = { RequestMethod.POST, RequestMethod.GET }, consumes = {"application/*"})
+	@RequestMapping(value = "/user", method = { RequestMethod.POST, RequestMethod.GET }, consumes = { "application/*" })
 	public ModelAndView user(Peticion peticion) throws UserNotFoundException, EmailNotFoundException {
 
 		validador = new GetVI();
