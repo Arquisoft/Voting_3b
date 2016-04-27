@@ -41,42 +41,40 @@ public class MainControllerTest {
 
 	@Value("${local.server.port}")
 	private int port;
-	@Autowired WebApplicationContext wac;
+	@Autowired
+	WebApplicationContext wac;
 	private URL base;
 	private RestTemplate template;
 	private MockMvc mvc;
-	boolean porPantalla=false;
-	
-
-	
+	boolean porPantalla = false;
 
 	@SuppressWarnings("static-access")
 	@Before
 	public void setUp() throws Exception {
 		this.base = new URL("http://localhost:" + port + "/");
-		template = new TestRestTemplate();		
+		template = new TestRestTemplate();
 		mvc = new MockMvcBuilders().webAppContextSetup(wac).build();
-		
+
 	}
-	
+
 	@Test
 	public void getLanding() throws Exception {
 		String userURI = base.toString() + "/user";
 		ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
 		assertThat(response.hasBody(), equalTo(true));
-		if (porPantalla) { System.out.println(response.getBody()); }
+		if (porPantalla) {
+			System.out.println(response.getBody());
+		}
 	}
-	
-	@Test	
+
+	@Test
 	public void printScreen() throws Exception {
-		MvcResult m = (mvc.perform(post("/user")
-				.contentType(MediaType.APPLICATION_JSON)
-				.content("{\"login\":\"pepe@gmail.com\", \"password\": \"p3p3\"}")
-		).andReturn());
-		System.out.println("RESULTADO JSON OBTENIDO: "+ m.getResponse().getContentAsString());
+		MvcResult m = (mvc.perform(post("/user").contentType(MediaType.APPLICATION_JSON)
+				.content("{\"login\":\"pepe@gmail.com\", \"password\": \"p3p3\"}")).andReturn());
+		System.out.println("RESULTADO JSON OBTENIDO: " + m.getResponse().getContentAsString());
 	}
-	
-	//USUARIO CORRECTO
+
+	// USUARIO CORRECTO
 	@Test
 	public void postUserOK() throws Exception {
 		MainController m = new MainController();
@@ -87,31 +85,31 @@ public class MainControllerTest {
 		assertTrue(u.getNombre().equals("Pepe"));
 		assertTrue(u.getNIF().equals("000"));
 	}
-	
-	//USUARIO NO EXISTENTE
+
+	// USUARIO NO EXISTENTE
 	@Test(expected = UserNotFoundException.class)
-	public void postUserUnknow() throws Exception {		
+	public void postUserUnknow() throws Exception {
 		MainController m = new MainController();
 		Peticion p = new Peticion("noExiste@gmail.com", "p3p3");
 
-		assertTrue(m.user(p) == null); 
+		assertTrue(m.user(p) == null);
 	}
-	
-	//USUARIO EXISTENTE PERO FALLA EN LA PASSWORD
+
+	// USUARIO EXISTENTE PERO FALLA EN LA PASSWORD
 	@Test(expected = UserNotFoundException.class)
-	public void postUserPassword() throws Exception {		
+	public void postUserPassword() throws Exception {
 		MainController m = new MainController();
 		Peticion p = new Peticion("pepe@gmail.com", "p4c4");
 
-		assertTrue(m.user(p) == null); 
+		assertTrue(m.user(p) == null);
 	}
-	
-	//USUARIO NO INTRODUCE BIEN EL EMAIL
+
+	// USUARIO NO INTRODUCE BIEN EL EMAIL
 	@Test(expected = EmailNotFoundException.class)
-	public void postUserBadPass() throws Exception {		
+	public void postUserBadPass() throws Exception {
 		MainController m = new MainController();
 		Peticion p = new Peticion("noEsCorrecto", "p3p3");
 
-		assertTrue(m.user(p) == null);  
+		assertTrue(m.user(p) == null);
 	}
 }
