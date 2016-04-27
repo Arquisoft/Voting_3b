@@ -1,24 +1,33 @@
 package DBManagement;
 
-import javax.persistence.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
+import DBManagement.model.PersonaData;
 import hello.UserNotFoundException;
-import hello.UserInfo;
 
 public class GetVP implements GetVoter {
+	Connection con;
+	PreparedStatement ps;
+	ResultSet rs;
 
 	@Override
-	public UserInfo findByEmailAndPassword(String email, String password) throws UserNotFoundException {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("voters");
-		EntityManager em = emf.createEntityManager();
-		UserInfo ui;
+	public PersonaData findByEmailAndPassword(String email, String password) throws UserNotFoundException, SQLException {
+		PersonaData votante;
 		try {
-			ui = em.createNamedQuery("UserInfo.findByEmailAndPassword", UserInfo.class).setParameter(1, email)
-					.setParameter(2, password).getSingleResult();
-		} catch (Exception e) {
-			throw new RuntimeException();
+			con = Jdbc.getCurrentConnection();
+			ps = con.prepareStatement("Select * from censos where email=? and password=?");
+			rs = ps.executeQuery();
+			votante = new PersonaData(rs.getString("nombre"), rs.getString("nif"), rs.getString("email"),
+					rs.getString("codcolegioelectoral"), rs.getString("password"));
+			return votante;
+		} catch (SQLException e) {
+			throw new UserNotFoundException();
+		}finally{
+			con.close();
 		}
-		return ui;
 	}
 
 }

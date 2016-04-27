@@ -1,10 +1,10 @@
 package VoterAccess;
 
+import DBManagement.model.PersonaData;
 import hello.UserNotFoundException;
-import hello.UserInfo;
 
 public interface GetVoterInfo {
 	
-	UserInfo getVoter(String email, String password) throws UserNotFoundException, EmailNotFoundException;
+	PersonaData getVoter(String email, String password) throws UserNotFoundException, EmailNotFoundException;
 
 }

@@ -1,7 +1,9 @@
 package hello;
 
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
+import DBManagement.model.PersonaData;
 import VoterAccess.EmailNotFoundException;
 import VoterAccess.GetVI;
 import VoterAccess.GetVoterInfo;
@@ -14,18 +16,20 @@ public class MainController {
 	
     @RequestMapping(value="/user", method = RequestMethod.POST)
     @ResponseBody
-    public UserInfo user(@RequestBody Peticion peticion) throws UserNotFoundException, EmailNotFoundException{
+    public ModelAndView user(@RequestBody Peticion peticion) throws UserNotFoundException, EmailNotFoundException{
     	
     	validador = new GetVI();
-    	UserInfo ui = null;
+    	PersonaData ui = null;
+    	ModelAndView mv = new ModelAndView();
     	try{
     		ui = validador.getVoter(peticion.getEmail(), peticion.getPassword());
+    		mv.addObject("usuario", ui);
     	}catch(EmailNotFoundException m){
     		throw m;
     	}catch(UserNotFoundException e){
     		throw e;
     	}
-    	return ui;
+    	return mv;
 
 
     }

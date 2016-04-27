@@ -1,11 +1,9 @@
 package voterAccess;
 
-import static org.junit.Assert.*;
-
 import static org.hamcrest.Matchers.equalTo;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.net.URL;
 
@@ -26,13 +24,14 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.servlet.ModelAndView;
 
+import DBManagement.model.PersonaData;
+import VoterAccess.EmailNotFoundException;
 import hello.Application;
 import hello.MainController;
 import hello.Peticion;
-import hello.UserInfo;
 import hello.UserNotFoundException;
-import VoterAccess.EmailNotFoundException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
@@ -82,10 +81,11 @@ public class MainControllerTest {
 	public void postUserOK() throws Exception {
 		MainController m = new MainController();
 		Peticion p = new Peticion("pepe@gmail.com", "p3p3");
-		UserInfo user = m.user(p);
-		assertTrue(user.getPollingStationCode() == 111222333);
-		assertTrue(user.getName().equals("Pepe"));
-		assertTrue(user.getNIF().equals("012345678P"));
+		ModelAndView user = m.user(p);
+		PersonaData u = (PersonaData) user.getModel().get("usuario");
+		assertTrue(u.getCodColegioElectoral().equals("AST001"));
+		assertTrue(u.getNombre().equals("Pepe"));
+		assertTrue(u.getNIF().equals("000"));
 	}
 	
 	//USUARIO NO EXISTENTE
