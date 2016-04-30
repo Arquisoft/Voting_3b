@@ -16,7 +16,7 @@ public class GetVP implements GetVoter {
 	@Override
 	public PersonaData findByEmailAndPassword(String email, String password)
 			throws UserNotFoundException, SQLException {
-		PersonaData votante;
+		PersonaData votante = null;
 		try {
 
 			con = es.uniovi.asw.dbUpdate.Jdbc.getCurrentConnection();
@@ -24,12 +24,15 @@ public class GetVP implements GetVoter {
 			rs = ps.executeQuery();
 			votante = new PersonaData(rs.getString("nombre"), rs.getString("nif"), rs.getString("email"),
 					rs.getString("codcolegioelectoral"), rs.getString("password"));
-			return votante;
+
 		} catch (SQLException e) {
 			throw new UserNotFoundException();
-		} finally {
-			con.close();
+		} catch (Exception e){
+			System.out.println("Supu...");
+		}finally {
+
 		}
+		return votante;
 	}
 
 }
