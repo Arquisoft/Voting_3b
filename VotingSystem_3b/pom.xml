@@ -114,10 +114,10 @@
 		<version>5.0.6</version>
 	</dependency>
 	
-	<!-- H2 DB -->
 	<dependency>
-		<groupId>com.h2database</groupId>
-		<artifactId>h2</artifactId>
+		<groupId>es.uniovi.asw</groupId>
+		<artifactId>censusesN</artifactId>
+		<version>0.0.1</version>
 	</dependency>
 	
 

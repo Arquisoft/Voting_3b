@@ -28,7 +28,7 @@ public class VotantesPersImpl implements VotantesPers{
 				ps.setString(3, v.getEmail());
 				ps.setString(4, v.getCodColegioElectoral());
 				ps.setString(5, v.getPassword());
-				ps.execute();
+				ps.executeUpdate();
 				
 				System.out.println("El usuario del cliente " + v.getNombre()
 						+ " es " + v.getEmail() + " y su contraseña es "

@@ -95,6 +95,12 @@
 			<scope>test</scope>
 		</dependency>
 
+	<dependency>
+		<groupId>es.uniovi.asw</groupId>
+		<artifactId>censusesN</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+
 
 	</dependencies>
 	<properties>

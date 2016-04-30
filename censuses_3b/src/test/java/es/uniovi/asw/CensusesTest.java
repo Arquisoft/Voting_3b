@@ -1,6 +1,6 @@
 package es.uniovi.asw;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -91,7 +91,8 @@ public void DBUpdate1() {
 		
 		//Intentamos buscar un votante inexistente en la base de datos
 		v2 = PersistenceFactory.getVotantesPers().findVotante("");
-		assertEquals(v2, null);
+		//assertEquals(v2, null);
+		assertNull(v2);
 		
 		PersistenceFactory.getVotantesPers().delete();
 		
@@ -118,7 +119,8 @@ public void DBUpdate2() {
 		 v3= PersistenceFactory.getVotantesPers().findVotante(vot.getNIF());
 		 
 		//Comprobamos que no se han añadido a la base de datos
-		assertEquals(v3, null);
+		//assertEquals(v3, null);
+		 assertNull(v3);
 	}
 
 	PersistenceFactory.getVotantesPers().delete();
@@ -132,12 +134,15 @@ public void Persistence(){
 	assertEquals(v.toString(), v2.toString());
 	
 	//Error
-	PersistenceFactory.getVotantesPers().insert(v, new WReportR(new WReportP()));
+		PersistenceFactory.getVotantesPers().insert(v,
+				new WReportR(new WReportP()));
+		PersistenceFactory.getVotantesPers().delete();
+		v2 = PersistenceFactory.getVotantesPers().findVotante("56982104R");
+		// assertEquals(v2, null);
+		assertNull(v2);
 	
 
-	PersistenceFactory.getVotantesPers().delete();
-	v2 = PersistenceFactory.getVotantesPers().findVotante("56982104R");
-	assertEquals(v2, null);
+	
 	
 	
 }

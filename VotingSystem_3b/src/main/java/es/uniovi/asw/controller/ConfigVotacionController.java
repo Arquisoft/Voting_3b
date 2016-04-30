@@ -10,6 +10,7 @@ import es.uniovi.asw.electors.dbUpdate.ConfigP;
 import es.uniovi.asw.electors.electorsConfig.ConfigR;
 import es.uniovi.asw.model.VotacionForm;
 
+
 @Controller
 @SessionAttributes("vot")
 public class ConfigVotacionController {
