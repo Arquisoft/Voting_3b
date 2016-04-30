@@ -15,6 +15,7 @@ import es.uniovi.asw.electors.dbUpdate.InsertConfig;
 import es.uniovi.asw.electors.dbUpdate.WreportR;
 import es.uniovi.asw.electors.electorsConfig.ConfigR;
 import es.uniovi.asw.electors.reportWriter.WreportP;
+import es.uniovi.asw.model.Censos;
 import es.uniovi.asw.model.ColegioElectoral;
 import es.uniovi.asw.model.Opcion;
 import es.uniovi.asw.model.Votacion;
@@ -242,6 +243,7 @@ public class VotingSystemTest {
 		@Test
 		public void test19VirtualVotes() {
 			//dao.restoreDatabase();
+			dao.insertCensos(new Censos("Prueba", "90500084Y", "prueba", "AST001", "prueba"));
 			Votante v = new Votante("90500084Y", "WEB", false, new Long(1));
 			dao.insertVotante(v);
 			iV.setVotante(v);

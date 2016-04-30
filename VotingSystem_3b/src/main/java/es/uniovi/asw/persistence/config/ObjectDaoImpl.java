@@ -126,7 +126,31 @@ public class ObjectDaoImpl implements ObjectDao {
 
 	@Override
 	public void insertCensos(Censos c) {
-		// TODO Auto-generated method stub
+		Connection con = null;
+		PreparedStatement ps = null;
+
+		try {
+
+			con = Jdbc.getConnection();
+			ps = con.prepareStatement("INSERT INTO CENSOS(NOMBRE, NIF, EMAIL, CODCOLEGIOELECTORAL, PASSWORD) VALUES(?, ?, ?, ?, ?)");
+			ps.setString(1, c.getNombre());
+			ps.setString(2, c.getNif());
+			ps.setString(3, c.getEmail());
+			ps.setString(4, c.getCofColegioElectoral());
+			ps.setString(5, c.getPassword());
+			
+			ps.executeUpdate();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally{
+			try {
+				ps.close();
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 
 	}
 
@@ -158,7 +182,7 @@ public class ObjectDaoImpl implements ObjectDao {
 			
 
 			if (rs.next()) {
-				v = new Censos(rs.getString(2), rs.getString(3), rs.getString(4), Integer.parseInt(rs.getString(5)), rs.getString(6));
+				v = new Censos(rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6));
 			}
 			
 			
@@ -314,7 +338,7 @@ public class ObjectDaoImpl implements ObjectDao {
 			ps.setLong(1, o.getId());
 			ps.setString(2, o.getNombre());
 			ps.setLong(3, o.getIdVotacion());
-			ps.execute();
+			ps.executeUpdate();
 
 			ps.close();
 			c.close();
@@ -419,13 +443,13 @@ public class ObjectDaoImpl implements ObjectDao {
 			c = Jdbc.getConnection();
 
 			PreparedStatement ps = c
-					.prepareStatement("INSERT INTO VOTANTE (NIF, TIPOVOTO, ESTADO, IDVOTACION) VALUES ( ?, ?, ?, ?)");
+					.prepareStatement("INSERT INTO VOTANTE (NIF, TIPOVOTO, ESTADO, IDVOTACION) VALUES (?, ?, ?, ?)");
 
 			ps.setString(1, v.getNif());
 			ps.setString(2, v.getTipovoto());
 			ps.setBoolean(3, v.isEstado());
 			ps.setLong(4, v.getIdVotacion());
-			ps.execute();
+			ps.executeUpdate();
 
 			ps.close();
 			c.close();
@@ -455,7 +479,7 @@ public class ObjectDaoImpl implements ObjectDao {
 			ps.setString(1, v.getTipovoto());
 			ps.setBoolean(2, v.isEstado());
 			ps.setString(3, v.getNif());
-			ps.execute();
+			ps.executeUpdate();
 
 			ps.close();
 			c.close();
@@ -483,7 +507,7 @@ public class ObjectDaoImpl implements ObjectDao {
 
 			ps.setBoolean(1, v.isEstado());
 			ps.setString(2, v.getNif());
-			ps.execute();
+			ps.executeUpdate();
 
 			ps.close();
 			c.close();
@@ -626,7 +650,7 @@ public class ObjectDaoImpl implements ObjectDao {
 
 			ps.setInt(1, v.getTotalVotos());
 			ps.setLong(2, v.getId());
-			ps.execute();
+			ps.executeUpdate();
 
 			ps.close();
 			c.close();
@@ -658,7 +682,7 @@ public class ObjectDaoImpl implements ObjectDao {
 			ps.setInt(3, v.getTotalVotos());
 			ps.setLong(4, v.getIdVotacion());
 			ps.setString(5, v.getColegioElectoral());
-			ps.execute();
+			ps.executeUpdate();
 
 			ps.close();
 			c.close();

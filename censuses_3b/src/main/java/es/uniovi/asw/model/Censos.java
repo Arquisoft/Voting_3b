@@ -5,12 +5,12 @@ public class Censos {
 	private String nombre;
 	private String nif;
 	private String email;
-	private int cofColegioElectoral;
+	private String cofColegioElectoral;
 	private String password;
 
 	
 	
-	public Censos(String nombre, String nif, String email, int cofColegioElectoral, String password) {
+	public Censos(String nombre, String nif, String email, String cofColegioElectoral, String password) {
 		super();
 		this.nombre = nombre;
 		this.nif = nif;
@@ -51,11 +51,11 @@ public class Censos {
 		this.email = email;
 	}
 
-	public int getCofColegioElectoral() {
+	public String getCofColegioElectoral() {
 		return cofColegioElectoral;
 	}
 
-	public void setCofColegioElectoral(int cofColegioElectoral) {
+	public void setCofColegioElectoral(String cofColegioElectoral) {
 		this.cofColegioElectoral = cofColegioElectoral;
 	}
 
