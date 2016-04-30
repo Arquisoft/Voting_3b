@@ -21,18 +21,24 @@ public class GetVP implements GetVoter {
 		PersonaData votante = null;
 		try {
 
-			con = Jdbc.getCurrentConnection();
-			ps = con.prepareStatement("Select * from censos where email=? and password=?");
+			con = Jdbc.getConnection();
+			ps = con.prepareStatement("select * from censos where email=? and password=?");
+			ps.setString(1, email);
+			ps.setString(2, password);
 			rs = ps.executeQuery();
-			votante = new PersonaData(rs.getString("nombre"), rs.getString("nif"), rs.getString("email"),
-					rs.getString("codcolegioelectoral"), rs.getString("password"));
+			if(rs.next()){
+				votante = new PersonaData(rs.getString("nombre"), rs.getString("nif"), rs.getString("email"),
+						rs.getString("codcolegioelectoral"), rs.getString("password"));
+			}else{
+				votante = null;
+				throw new UserNotFoundException();
+			}
+		
 
 		} catch (SQLException e) {
-			throw new UserNotFoundException();
-		} catch (Exception e){
-			System.out.println("Supu...");
-		}finally {
-
+			e.printStackTrace();
+		} finally {
+			Jdbc.close(rs, ps, con);
 		}
 		return votante;
 	}

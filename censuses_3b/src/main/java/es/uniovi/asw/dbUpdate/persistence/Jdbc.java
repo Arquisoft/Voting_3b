@@ -100,6 +100,7 @@ public class Jdbc {
 		stm.execute(database.getProperty("INSERT_CENSO_1"));
 		stm.execute(database.getProperty("INSERT_CENSO_2"));
 		stm.execute(database.getProperty("INSERT_CENSO_3"));
+		stm.execute(database.getProperty("INSERT_VOTANTE_1"));
 		
 		// stm.execute("truncate table CENSOS");
 

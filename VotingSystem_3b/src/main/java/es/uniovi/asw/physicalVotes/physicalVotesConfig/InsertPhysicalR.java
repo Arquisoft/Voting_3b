@@ -43,7 +43,7 @@ public class InsertPhysicalR implements Insert {
 			Long opcionEscogida = (long) (Double.parseDouble(entry.getValue().get(1)));
 			int totVotos = (int) Double.parseDouble(entry.getValue().get(2));
 			Long idVotacion = (long) (Double.parseDouble(entry.getValue().get(3)));
-			int codColegioEntero = (int) Double.parseDouble(entry.getValue().get(4));
+			String codColegioEntero = entry.getValue().get(4);
 			String codColegio = codColegioEntero + "";
 			
 
