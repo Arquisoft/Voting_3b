@@ -8,7 +8,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.uniovi.asw.dbUpdate.Jdbc;
 import es.uniovi.asw.dbUpdate.WReportR;
 import es.uniovi.asw.parser.Votante;
 

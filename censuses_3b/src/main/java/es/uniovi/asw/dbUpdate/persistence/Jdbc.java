@@ -1,4 +1,4 @@
-package es.uniovi.asw.persistence.config;
+package es.uniovi.asw.dbUpdate.persistence;
 
 import java.io.FileInputStream;
 import java.io.IOException;

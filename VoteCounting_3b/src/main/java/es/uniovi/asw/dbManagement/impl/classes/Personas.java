@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.uniovi.asw.dbManagement.Jdbc;
 import es.uniovi.asw.dbManagement.model.PersonaData;
+import es.uniovi.asw.dbUpdate.persistence.Jdbc;
 
 public class Personas {
 

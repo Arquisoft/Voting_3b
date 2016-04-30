@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import es.uniovi.asw.dbUpdate.persistence.Jdbc;
 import es.uniovi.asw.electors.dbUpdate.WriteReport;
 import es.uniovi.asw.model.Censos;
 import es.uniovi.asw.model.ColegioElectoral;

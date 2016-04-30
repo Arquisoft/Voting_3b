@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import es.uniovi.asw.dbUpdate.persistence.Jdbc;
 import DBManagement.model.PersonaData;
 import hello.UserNotFoundException;
 
@@ -19,7 +20,7 @@ public class GetVP implements GetVoter {
 		PersonaData votante = null;
 		try {
 
-			con = es.uniovi.asw.dbUpdate.Jdbc.getCurrentConnection();
+			con = Jdbc.getCurrentConnection();
 			ps = con.prepareStatement("Select * from censos where email=? and password=?");
 			rs = ps.executeQuery();
 			votante = new PersonaData(rs.getString("nombre"), rs.getString("nif"), rs.getString("email"),

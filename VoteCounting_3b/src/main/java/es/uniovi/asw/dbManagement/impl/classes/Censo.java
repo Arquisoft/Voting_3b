@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.util.HashMap;
 import java.util.Map;
 
-import es.uniovi.asw.dbManagement.Jdbc;
+import es.uniovi.asw.dbUpdate.persistence.Jdbc;
 
 /***
  * 
