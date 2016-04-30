@@ -14,6 +14,7 @@ public class GetVI implements GetVoterInfo {
 		// TODO Auto-generated method stub
 		PersonaData ui = null;
 		if (!ValidadorEmail.validateEmail(email))
+			
 			throw new EmailNotFoundException();
 		try {
 			ui = ServicesFactory.getVoterService().findByEmailAndPassword(email, password);

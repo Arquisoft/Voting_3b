@@ -19,7 +19,7 @@ public class GetVP implements GetVoter {
 		PersonaData votante;
 		try {
 
-			con = Jdbc.getCurrentConnection();
+			con = es.uniovi.asw.dbUpdate.Jdbc.getCurrentConnection();
 			ps = con.prepareStatement("Select * from censos where email=? and password=?");
 			rs = ps.executeQuery();
 			votante = new PersonaData(rs.getString("nombre"), rs.getString("nif"), rs.getString("email"),
