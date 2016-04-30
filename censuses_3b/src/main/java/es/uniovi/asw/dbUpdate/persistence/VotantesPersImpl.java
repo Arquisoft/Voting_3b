@@ -53,7 +53,8 @@ public class VotantesPersImpl implements VotantesPers{
 		
 		try {
 			c = Jdbc.getConnection();
-			PreparedStatement ps = c.prepareStatement("SELECT * FROM CENSOS WHERE NIF = '" + NIF + "'");
+			PreparedStatement ps = c.prepareStatement("SELECT * FROM CENSOS WHERE NIF = ?");
+			ps.setString(1, NIF);
 			rs = ps.executeQuery();
 
 			if (rs.next()) {

@@ -25,6 +25,16 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.servlet.ModelAndView;
 
+import es.uniovi.asw.dbUpdate.InsertP;
+import es.uniovi.asw.dbUpdate.WReportR;
+import es.uniovi.asw.dbUpdate.persistence.PersistenceFactory;
+import es.uniovi.asw.parser.Insert;
+import es.uniovi.asw.parser.InsertR;
+import es.uniovi.asw.parser.Votante;
+import es.uniovi.asw.parser.carta.CartaCensuses;
+import es.uniovi.asw.parser.carta.CartaPDF;
+import es.uniovi.asw.parser.read.RCensus;
+import es.uniovi.asw.reportWriter.WReportP;
 import DBManagement.model.PersonaData;
 import VoterAccess.EmailNotFoundException;
 import hello.Application;
@@ -53,7 +63,6 @@ public class MainControllerTest {
 		this.base = new URL("http://localhost:" + port + "/");
 		template = new TestRestTemplate();
 		mvc = new MockMvcBuilders().webAppContextSetup(wac).build();
-
 	}
 
 	@Test
@@ -77,12 +86,23 @@ public class MainControllerTest {
 	@Test
 	public void postUserOK() throws Exception {
 		MainController m = new MainController();
-		Peticion p = new Peticion("pepe@gmail.com", "p3p3");
+		
+//		CartaCensuses carta = new CartaPDF();
+//		WReportR report = new WReportR(new WReportP());
+//		Insert r = new InsertR(new RCensus(), carta, "src/test/resources/test.xlsx");
+//		r.addVotante(new InsertP(report) );
+		
+		
+		PersistenceFactory.getVotantesPers().insert(new es.uniovi.asw.parser.Votante("Pepe", "56982000R", "pepe@gmail.com", "AST001", "p3p3"), null);
+		Votante v = PersistenceFactory.getVotantesPers().findVotante("56982000R");
+		
+		//Para recuperar el password aleatorio
+		Peticion p = new Peticion(v.getEmail(), v.getPassword());
 		ModelAndView user = m.user(p);
 		PersonaData u = (PersonaData) user.getModel().get("usuario");
 		assertTrue(u.getCodColegioElectoral().equals("AST001"));
 		assertTrue(u.getNombre().equals("Pepe"));
-		assertTrue(u.getNIF().equals("000"));
+		assertTrue(u.getNIF().equals("56982000R"));
 	}
 
 	// USUARIO NO EXISTENTE

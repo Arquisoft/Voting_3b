@@ -84,7 +84,9 @@ public void DBUpdate1() {
 		assertEquals(v.getNIF(), v2.getNIF());
 		assertEquals(v.getEmail(), v2.getEmail());
 		assertEquals(v.getCodColegioElectoral(), v2.getCodColegioElectoral());
-		assertEquals(v.getPassword(), v2.getPassword());		
+		assertEquals(v.getPassword(), v2.getPassword());
+		
+		
 		
 		//Intentamos introducir el mismo votante
 		insertP.insertar(v);
@@ -95,6 +97,11 @@ public void DBUpdate1() {
 		assertNull(v2);
 		
 		PersistenceFactory.getVotantesPers().delete();
+		
+		v = new Votante("Pepe", "56982000R", "pepe@gmail.com", "AST001", "p3p3");
+		insertP.insertar(v);
+		v2 = PersistenceFactory.getVotantesPers().findVotante(v.getNIF());
+		assertEquals(v.getNIF(), v2.getNIF());
 		
 		
 }
@@ -139,12 +146,7 @@ public void Persistence(){
 		PersistenceFactory.getVotantesPers().delete();
 		v2 = PersistenceFactory.getVotantesPers().findVotante("56982104R");
 		// assertEquals(v2, null);
-		assertNull(v2);
-	
-
-	
-	
-	
+		assertNull(v2);	
 }
 
 @Test
