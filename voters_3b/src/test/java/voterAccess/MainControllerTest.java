@@ -93,8 +93,8 @@ public class MainControllerTest {
 //		r.addVotante(new InsertP(report) );
 		
 		
-		PersistenceFactory.getVotantesPers().insert(new es.uniovi.asw.parser.Votante("Pepe", "56982000R", "pepe@gmail.com", "AST001", "p3p3"), null);
-		Votante v = PersistenceFactory.getVotantesPers().findVotante("56982000R");
+		//PersistenceFactory.getVotantesPers().insert(new es.uniovi.asw.parser.Votante("Pepe", "000", "pepe@gmail.com", "AST001", "p3p3"), null);
+		Votante v = PersistenceFactory.getVotantesPers().findVotante("000");
 		
 		//Para recuperar el password aleatorio
 		Peticion p = new Peticion(v.getEmail(), v.getPassword());
@@ -102,7 +102,7 @@ public class MainControllerTest {
 		PersonaData u = (PersonaData) user.getModel().get("usuario");
 		assertTrue(u.getCodColegioElectoral().equals("AST001"));
 		assertTrue(u.getNombre().equals("Pepe"));
-		//assertTrue(u.getNIF().equals("56982000R"));
+		assertTrue(u.getNIF().equals("000"));
 	}
 
 	// USUARIO NO EXISTENTE
