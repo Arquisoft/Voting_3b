@@ -1,8 +1,0 @@
-Buenos días Pepe, le informamos de que su usuario para poder votar en las elecciones ya ha sido creado.
-Usuario: pepe@gmail.com
-<<<<<<< HEAD
-Contraseña: oFIXR39)
-=======
-Contrase�a: KFMVf32:
->>>>>>> 5abfa0bccc953931a270da380333db20939fd1a8
-Un saludo.

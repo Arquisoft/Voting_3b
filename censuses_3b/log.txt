@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 30/4/2016;13:4:51;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:4:51;ERROR: El votante con nombre: Luis L�pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
@@ -701,3 +702,5 @@
 1/5/2016;11:38:23;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 1/5/2016;11:38:23;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
 1/5/2016;11:38:23;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contrase�a incorrecta;
+=======
+>>>>>>> a3f3d2a2b16b34eb14358d764b4366470de29c14
