@@ -101,7 +101,7 @@ public class Recuento {
 	}
 
 	public static Double getParticipacion(String lugar) {
-		/*
+		
 		if (participacion.get(lugar) == null) {
 			Integer votantesPotenciales = null;
 			Integer contador = 0;
@@ -128,8 +128,8 @@ public class Recuento {
 		}
 		return Math.floor(participacion.get(lugar)*100)/100;
 		//return participacion.get(lugar);
-		 * */
-		 return 0.0;
+		
+		 //return 0.0;
 	}
 
 	public static Map<String, Integer> getVotosPorCiudad(String lugar) {
