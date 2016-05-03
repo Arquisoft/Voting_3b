@@ -1,8 +1,13 @@
 package voterAccess;
 
 import static org.hamcrest.Matchers.equalTo;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import hello.Application;
+import hello.MainController;
+import hello.Peticion;
+import hello.UserNotFoundException;
 
 import java.net.URL;
 
@@ -25,22 +30,10 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.servlet.ModelAndView;
 
-import es.uniovi.asw.dbUpdate.InsertP;
-import es.uniovi.asw.dbUpdate.WReportR;
-import es.uniovi.asw.dbUpdate.persistence.PersistenceFactory;
-import es.uniovi.asw.parser.Insert;
-import es.uniovi.asw.parser.InsertR;
-import es.uniovi.asw.parser.Votante;
-import es.uniovi.asw.parser.carta.CartaCensuses;
-import es.uniovi.asw.parser.carta.CartaPDF;
-import es.uniovi.asw.parser.read.RCensus;
-import es.uniovi.asw.reportWriter.WReportP;
 import DBManagement.model.PersonaData;
 import VoterAccess.EmailNotFoundException;
-import hello.Application;
-import hello.MainController;
-import hello.Peticion;
-import hello.UserNotFoundException;
+import es.uniovi.asw.dbUpdate.persistence.PersistenceFactory;
+import es.uniovi.asw.parser.Votante;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)

@@ -1,6 +1,6 @@
 
 30/4/2016;13:4:51;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:4:51;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:4:51;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:4:51;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:4:51;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:4:51;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
@@ -11,10 +11,10 @@
 30/4/2016;13:4:51;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:4:51;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:4:51;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:4:51;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:4:51;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:4:51;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:4:51;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:4:52;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:4:52;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:4:52;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:4:52;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:4:53;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -22,9 +22,9 @@
 30/4/2016;13:4:53;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;13:4:53;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;13:4:53;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;13:4:53;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;13:4:53;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;13:14:7;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:14:7;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:14:7;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:14:7;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:14:7;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:14:7;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
@@ -35,10 +35,10 @@
 30/4/2016;13:14:7;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:14:7;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:14:7;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:14:7;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:14:7;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:14:7;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:14:7;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:14:8;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:14:8;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:14:8;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:14:8;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:14:8;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -46,9 +46,9 @@
 30/4/2016;13:14:8;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;13:14:8;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;13:14:8;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;13:14:8;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;13:14:8;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;13:19:46;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:19:46;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:19:46;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:19:46;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:19:46;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:19:46;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
@@ -59,10 +59,10 @@
 30/4/2016;13:19:46;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:19:46;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:19:46;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:19:46;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:19:46;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:19:46;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:19:46;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:19:47;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:19:47;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:19:47;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:19:47;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:19:47;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -70,9 +70,9 @@
 30/4/2016;13:19:47;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;13:19:47;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;13:19:47;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;13:19:47;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;13:19:47;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;13:22:13;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:22:13;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:22:13;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:22:13;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:22:13;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:22:13;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
@@ -83,10 +83,10 @@
 30/4/2016;13:22:13;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:22:13;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:22:13;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:22:13;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:22:13;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:22:13;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:22:13;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:22:14;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:22:14;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:22:14;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:22:14;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:22:14;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -94,9 +94,9 @@
 30/4/2016;13:22:14;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;13:22:14;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;13:22:14;ERROR: El votante con nombre: Javi y DNI: 85214236T no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:22:14;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;13:22:14;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;13:26:48;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:26:48;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:26:48;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:26:48;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:26:48;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:26:48;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
@@ -107,10 +107,10 @@
 30/4/2016;13:26:48;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:26:48;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:26:48;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:26:48;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:26:48;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:26:48;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:26:48;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:26:49;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:26:49;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:26:49;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:26:49;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:26:49;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -118,7 +118,7 @@
 30/4/2016;13:26:49;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;13:26:49;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;13:26:49;ERROR: El votante con nombre: Javi y DNI: 85214236T no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:26:49;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;13:26:49;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;13:27:46;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:27:46;ERROR: El votante con nombre: Luis LÃ³pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:27:46;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
@@ -238,7 +238,7 @@
 30/4/2016;13:58:2;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:58:2;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:58:2;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;13:58:3;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;13:58:3;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:58:3;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:58:3;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;13:58:4;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -246,13 +246,13 @@
 30/4/2016;13:58:4;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;13:58:4;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;13:58:4;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;13:58:4;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;13:58:4;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;14:54:54;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;14:54:54;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 30/4/2016;14:54:54;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;14:54:54;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;14:54:54;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;14:54:55;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;14:54:55;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;14:54:55;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;14:54:55;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;14:54:56;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -260,13 +260,13 @@
 30/4/2016;14:54:56;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;14:54:56;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;14:54:56;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;14:54:56;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;14:54:56;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;16:12:23;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;16:12:23;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 30/4/2016;16:12:23;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;16:12:23;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;16:12:23;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;16:12:24;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;16:12:24;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;16:12:24;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;16:12:24;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;16:12:25;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -274,13 +274,13 @@
 30/4/2016;16:12:25;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;16:12:25;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;16:12:25;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;16:12:25;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;16:12:25;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;17:9:59;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:9:59;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:9:59;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:9:59;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:10:0;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;17:10:0;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;17:10:0;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:10:0;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:10:0;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:10:2;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -288,13 +288,13 @@
 30/4/2016;17:10:2;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;17:10:2;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;17:10:2;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;17:10:2;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;17:10:2;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;17:58:19;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:58:19;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:58:19;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:58:19;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:58:19;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;17:58:20;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;17:58:20;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:58:20;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:58:20;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;17:58:22;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -302,7 +302,7 @@
 30/4/2016;17:58:22;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;17:58:22;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;17:58:22;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;17:58:22;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;17:58:22;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;18:6:3;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;18:6:3;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 30/4/2016;18:6:3;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
@@ -392,7 +392,7 @@
 30/4/2016;19:31:51;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;19:31:51;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;19:31:51;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;19:31:51;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;19:31:51;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;19:31:51;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;19:31:52;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;19:31:53;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -400,7 +400,7 @@
 30/4/2016;19:31:53;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;19:31:53;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;19:31:53;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;19:31:53;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;19:31:53;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;19:44:10;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
 30/4/2016;19:44:10;ERROR: El votante con nombre: Luis LÃ³pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;19:44:10;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
@@ -421,7 +421,7 @@
 30/4/2016;20:30:31;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;20:30:31;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;20:30:31;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;20:30:31;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;20:30:31;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;20:30:31;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;20:30:32;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;20:30:32;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -429,7 +429,7 @@
 30/4/2016;20:30:32;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;20:30:32;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;20:30:32;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;20:30:32;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;20:30:32;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;20:45:58;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;20:45:58;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 30/4/2016;20:45:58;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
@@ -463,7 +463,7 @@
 30/4/2016;20:48:32;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;20:48:32;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;20:48:32;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;20:48:33;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;20:48:33;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;20:48:33;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;20:48:33;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;20:48:34;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -471,13 +471,13 @@
 30/4/2016;20:48:34;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;20:48:34;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;20:48:34;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;20:48:34;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;20:48:34;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;21:1:39;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:1:39;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:1:39;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:1:39;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:1:39;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;21:1:40;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;21:1:40;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:1:40;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:1:40;ERROR: El votante con nombre: Pepe y DNI: 56982000R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:1:40;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -486,7 +486,7 @@
 30/4/2016;21:1:41;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;21:1:41;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;21:1:41;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;21:1:41;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;21:1:41;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;21:17:43;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:17:43;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:17:43;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
@@ -507,7 +507,7 @@
 30/4/2016;21:18:31;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:18:31;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:18:32;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;21:18:32;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;21:18:32;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:18:32;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:18:32;ERROR: El votante con nombre: Pepe y DNI: 56982000R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:18:32;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -516,7 +516,7 @@
 30/4/2016;21:18:34;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;21:18:34;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;21:18:34;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;21:18:34;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;21:18:34;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;21:24:44;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:24:44;ERROR: El votante con nombre: Luis LÃ³pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;21:24:44;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
@@ -526,7 +526,7 @@
 30/4/2016;22:1:30;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;22:1:30;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;22:1:30;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;22:1:33;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;22:1:33;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;22:1:34;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;22:1:34;ERROR: El votante con nombre: Pepe y DNI: 56982000R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;22:1:40;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -535,7 +535,7 @@
 30/4/2016;22:1:40;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;22:1:40;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;22:1:40;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;22:1:40;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;22:1:40;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 30/4/2016;22:12:49;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;22:12:49;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 30/4/2016;22:12:49;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
@@ -556,7 +556,7 @@
 30/4/2016;22:19:5;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 30/4/2016;22:19:5;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 30/4/2016;22:19:6;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-30/4/2016;22:19:6;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+30/4/2016;22:19:6;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 30/4/2016;22:19:6;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 30/4/2016;22:19:6;ERROR: El votante con nombre: Pepe y DNI: 56982000R no se ha podido cargar correctamente en la base de datos.
 30/4/2016;22:19:6;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -565,7 +565,7 @@
 30/4/2016;22:19:8;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 30/4/2016;22:19:8;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 30/4/2016;22:19:8;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-30/4/2016;22:19:8;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+30/4/2016;22:19:8;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 1/5/2016;1:15:15;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 1/5/2016;1:15:15;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 1/5/2016;1:15:15;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
@@ -601,7 +601,7 @@
 1/5/2016;1:42:54;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 1/5/2016;1:42:54;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 1/5/2016;1:42:54;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-1/5/2016;1:42:55;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+1/5/2016;1:42:55;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 1/5/2016;1:42:55;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 1/5/2016;1:42:55;ERROR: El votante con nombre: Pepe y DNI: 56982000R no se ha podido cargar correctamente en la base de datos.
 1/5/2016;1:42:55;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -610,8 +610,7 @@
 1/5/2016;1:42:56;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 1/5/2016;1:42:56;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 1/5/2016;1:42:56;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-1/5/2016;1:42:56;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
-<<<<<<< HEAD
+1/5/2016;1:42:56;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 1/5/2016;1:52:43;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 1/5/2016;1:52:43;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 1/5/2016;1:52:43;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
@@ -627,13 +626,12 @@
 1/5/2016;1:52:44;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 1/5/2016;1:52:44;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
 1/5/2016;1:52:44;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;ContraseÃ±a incorrecta;
-=======
 1/5/2016;10:41:26;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 1/5/2016;10:41:26;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 1/5/2016;10:41:26;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 1/5/2016;10:41:26;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 1/5/2016;10:41:27;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-1/5/2016;10:41:27;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+1/5/2016;10:41:27;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 1/5/2016;10:41:27;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 1/5/2016;10:41:27;ERROR: El votante con nombre: Pepe y DNI: 56982000R no se ha podido cargar correctamente en la base de datos.
 1/5/2016;10:41:28;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -642,13 +640,13 @@
 1/5/2016;10:41:28;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 1/5/2016;10:41:28;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 1/5/2016;10:41:28;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-1/5/2016;10:41:28;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+1/5/2016;10:41:28;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 1/5/2016;11:6:1;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:6:1;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:6:1;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:6:1;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:6:1;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-1/5/2016;11:6:2;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+1/5/2016;11:6:2;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:6:2;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:6:2;ERROR: El votante con nombre: Pepe y DNI: 56982000R no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:6:2;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -657,13 +655,13 @@
 1/5/2016;11:6:2;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 1/5/2016;11:6:2;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 1/5/2016;11:6:2;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-1/5/2016;11:6:2;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+1/5/2016;11:6:2;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 1/5/2016;11:13:29;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:13:29;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:13:29;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:13:29;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:13:29;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-1/5/2016;11:13:29;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+1/5/2016;11:13:29;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:13:29;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:13:29;ERROR: El votante con nombre: Pepe y DNI: 56982000R no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:13:29;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -672,13 +670,13 @@
 1/5/2016;11:13:30;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 1/5/2016;11:13:30;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 1/5/2016;11:13:30;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-1/5/2016;11:13:30;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+1/5/2016;11:13:30;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 1/5/2016;11:35:28;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:35:28;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:35:28;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:35:28;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:35:28;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-1/5/2016;11:35:29;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+1/5/2016;11:35:29;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:35:29;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:35:29;ERROR: El votante con nombre: Pepe y DNI: 56982000R no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:35:29;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -687,13 +685,13 @@
 1/5/2016;11:35:29;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 1/5/2016;11:35:29;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 1/5/2016;11:35:29;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-1/5/2016;11:35:29;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
+1/5/2016;11:35:29;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
 1/5/2016;11:38:21;ERROR: El votante con nombre: Pedro y DNI: 56788104R no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:38:21;ERROR: El votante con nombre: Carmen y DNI: 96458545Y no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:38:21;ERROR: El votante con nombre: Pablo y DNI: 896651208G no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:38:21;ERROR: El votante con nombre: Javi y DNI: 852344236S no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:38:21;ERROR: El votante con nombre: Juan Torres Pardo y DNI: 90500084Y no se ha podido cargar correctamente en la base de datos.
-1/5/2016;11:38:22;ERROR: El votante con nombre: Luis López Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
+1/5/2016;11:38:22;ERROR: El votante con nombre: Luis Lï¿½pez Fernando y DNI: 19160962F no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:38:22;ERROR: El votante con nombre: Ana Torres Pardo y DNI: 09940449X no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:38:22;ERROR: El votante con nombre: Pepe y DNI: 56982000R no se ha podido cargar correctamente en la base de datos.
 1/5/2016;11:38:22;ERROR: El votante con nombre: Pedro Garcia y DNI: 56982104R no se ha podido cargar correctamente en la base de datos.
@@ -702,5 +700,4 @@
 1/5/2016;11:38:23;ERROR: En el votante  con Nombre: Carmen;NIF incorrecto;
 1/5/2016;11:38:23;ERROR: En el votante  con Nombre: Pablo; con NIF: 89641208G;Email incorrecto;
 1/5/2016;11:38:23;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Cod Colegio electoral incorrecto;
-1/5/2016;11:38:23;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseña incorrecta;
->>>>>>> 5abfa0bccc953931a270da380333db20939fd1a8
+1/5/2016;11:38:23;ERROR: En el votante  con Nombre: Javi; con NIF: 85214236T;Contraseï¿½a incorrecta;
