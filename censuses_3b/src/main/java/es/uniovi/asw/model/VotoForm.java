@@ -13,7 +13,6 @@ public class VotoForm {
 		this.opcion = opcion;
 	}
 
-
 	public String getOpcion() {
 		return opcion;
 	}
@@ -22,13 +21,9 @@ public class VotoForm {
 		this.opcion = opcion;
 	}
 
-
-
 	public String getNif() {
 		return nif;
 	}
-
-
 
 	public void setNif(String nif) {
 		this.nif = nif;

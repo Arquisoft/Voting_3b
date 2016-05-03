@@ -1,6 +1,7 @@
 package es.uniovi.asw;
 
 import static org.hamcrest.Matchers.containsString;
+import static org.junit.Assert.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -15,7 +16,16 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.ui.Model;
 import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.servlet.ModelAndView;
+
+import es.uniovi.asw.controller.ConfigVotacionController;
+import es.uniovi.asw.controller.VotanteController;
+import es.uniovi.asw.controller.VotosController;
+import es.uniovi.asw.model.TipoVotoForm;
+import es.uniovi.asw.model.VotacionForm;
+import es.uniovi.asw.model.VotoForm;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
@@ -25,12 +35,21 @@ public class MainControllerTest {
 
 	@Autowired
 	private WebApplicationContext context;
+	
+	private ConfigVotacionController configVotacionC; 
+	
+	private VotosController votosC;
+	
+	private VotanteController votanteC;
 
 	private MockMvc mvc;
 
 	@Before
 	public void setUp() throws Exception {
 		mvc = MockMvcBuilders.webAppContextSetup(context).build();
+		configVotacionC = new ConfigVotacionController();
+		votosC = new VotosController();
+		votanteC = new VotanteController();
 
 	}
 
@@ -68,5 +87,41 @@ public class MainControllerTest {
 				.andExpect(content().string(containsString("ELEGIR TIPO DE")));
 
 	}
+	
+	@Test(expected = NullPointerException.class)
+	public void testConfigVotacionController1() throws Exception {
+		assertEquals("/error", configVotacionC.guardarConfigVot(null,  null));	
+	}
+	
+	@Test(expected = NullPointerException.class)
+	public void testConfigVotacionController2() throws Exception {
+		assertEquals("/error", configVotacionC.guardarConfigVot(new VotacionForm(),  null));	
+	}
+	
+	@Test(expected = NullPointerException.class)
+	public void testVotosController1() throws Exception {
+		assertEquals("/error", votosC.GetVoteInfo(null, null));	
+	}
+	
+	@Test(expected = NullPointerException.class)
+	public void testVotosController2() throws Exception {
+		assertEquals("/error", votosC.GetVoteInfo(new VotoForm(), null));	
+	}
+	
+	@Test(expected = NullPointerException.class)
+	public void testVotanteController1() throws Exception {
+		assertEquals("/error", votanteC.SetTypeVote(null, null));	
+	}
+	
+	@Test(expected = NullPointerException.class)
+	public void testVotanteController2() throws Exception {
+		assertEquals("/error", votanteC.SetTypeVote(new TipoVotoForm() , null));	
+	}
+	
+	
+	
+	
+	
+	
 
 }
