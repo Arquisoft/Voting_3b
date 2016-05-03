@@ -122,7 +122,12 @@ public class Recuento {
 			}
 			for (Integer v : vs.values())
 				contador += v;
-			p = (contador * 1.0 / votantesPotenciales);
+			if(contador > 0){
+				p = (contador * 1.0 / votantesPotenciales);
+			}else {
+				p = 0;
+			}
+			
 
 			participacion.put(lugar, p * 100);
 		}

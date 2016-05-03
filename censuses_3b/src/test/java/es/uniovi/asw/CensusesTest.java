@@ -98,11 +98,6 @@ public void DBUpdate1() {
 		
 		PersistenceFactory.getVotantesPers().delete();
 		
-//		v = new Votante("Pepe", "56982000R", "pepe@gmail.com", "AST001", "p3p3");
-//		insertP.insertar(v);
-//		v2 = PersistenceFactory.getVotantesPers().findVotante(v.getNIF());
-//		assertEquals(v.getNIF(), v2.getNIF());
-		
 		
 }
 
