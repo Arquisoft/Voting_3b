@@ -1,4 +1,8 @@
 Buenos días Pepe, le informamos de que su usuario para poder votar en las elecciones ya ha sido creado.
 Usuario: pepe@gmail.com
+<<<<<<< HEAD
 Contraseña: gsfSK52^
+=======
+Contraseña: OcEuC93&
+>>>>>>> damian
 Un saludo.

@@ -218,7 +218,7 @@ public class VotingSystemTest {
 			List<Votacion> vs = dao.findAllVotaciones();
 			dao.insertOpcion(new Opcion(1L, "Opcion 2", vs.get(0).getId()));
 			List<Opcion> ops = dao.findAllOpciones();
-			dao.insertVotos(new Votos("Web", ops.get(0).getId(), 1, vs.get(0).getId(), "AST001"));
+			dao.insertVotos(new Votos("Web", 1L, 1, vs.get(0).getId(), "AST001"));
 			assertEquals(1, dao.findAllVotos().size());
 			List<Votos> votos = dao.findAllVotos();
 			assertEquals("Web", dao.findVotos(votos.get(0).getId()).getTipoVoto());
