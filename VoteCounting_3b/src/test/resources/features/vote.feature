@@ -7,9 +7,9 @@ Feature: vote page
   Scenario: client makes calls to POST /statisticsCiudad
   	When the client call to /statisticsCiudad
   	Given the city "Oviedo"
-  	Then the client receives the number "303"
+  	Then the client receives the number "0"
   	
   Scenario: cliente makes a call to POST /statisticsComunidad
   	When the client makes a call to /statisticsComunidad
-  	Given the state "Galicia"
-  	Then the client receives the participation "71.39"
+  	Given the state "Asturies"
+  	Then the client receives the participation "0.0"

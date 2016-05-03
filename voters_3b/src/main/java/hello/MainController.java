@@ -16,7 +16,7 @@ import VoterAccess.GetVoterInfo;
 @RestController
 @SessionAttributes("peticion")
 public class MainController {
-
+	//Pepe 000 pepe@gmail.com AST001 p3p3 
 	private GetVoterInfo validador;
 
 	@RequestMapping(value = "/", method = { RequestMethod.POST, RequestMethod.GET })
