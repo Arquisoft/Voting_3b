@@ -1,1 +1,3 @@
 20/4/2016;15:13:43;ERROR: En la votacion fecha de inicio incorrectafecha final incorrecta
+3/5/2016;19:14:59;ERROR: En el voto: La opción escogida es incorrecta
+3/5/2016;19:14:59;ERROR: En el voto: La votación tiene un valor inválido

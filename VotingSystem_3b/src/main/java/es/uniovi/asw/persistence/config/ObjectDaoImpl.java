@@ -7,7 +7,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Properties;
 
 import es.uniovi.asw.dbUpdate.persistence.Jdbc;
 import es.uniovi.asw.electors.dbUpdate.WriteReport;
@@ -20,8 +19,6 @@ import es.uniovi.asw.model.Votos;
 
 public class ObjectDaoImpl implements ObjectDao {
 	
-	private static final String SCRIPT = "src/main/java/script.properties";
-	private static Properties database;
 
 	@Override
 	public void insertColegio(ColegioElectoral v) {
