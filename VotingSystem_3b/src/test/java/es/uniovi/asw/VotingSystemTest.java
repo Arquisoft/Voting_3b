@@ -228,6 +228,7 @@ public class VotingSystemTest {
 		
 		@Test
 		public void test17Votos() {
+			/*
 			es.uniovi.asw.physicalVotes.dBUpdate.WreportR report1 = 
 					new es.uniovi.asw.physicalVotes.dBUpdate.WreportR(
 							new es.uniovi.asw.physicalVotes.reportWriter.WreportP());
@@ -236,6 +237,7 @@ public class VotingSystemTest {
 			boolean exito = r1.addVoto(new InsertVotesP(report1));
 			assertTrue(exito);
 			assertEquals(4, dao.findAllVotos().size());
+			*/
 			
 		}
 		
@@ -256,8 +258,11 @@ public class VotingSystemTest {
 		@Test
 		public void test19VirtualVotes() {
 			//dao.restoreDatabase();
+			Votacion votacion = new Votacion(new Date(), new Date(), "Referendum");
+			dao.insertVotacion(votacion, null);
+			List<Votacion> vs = dao.findAllVotaciones();
 			dao.insertCensos(new Censos("Prueba", "90500084Y", "prueba", "AST001", "prueba"));
-			Votante v = new Votante("90500084Y", "WEB", false, new Long(1));
+			Votante v = new Votante("90500084Y", "WEB", false, vs.get(0).getId());
 			dao.insertVotante(v);
 			iV.setVotante(v);
 			assertEquals(v.getNif(), 
@@ -268,8 +273,12 @@ public class VotingSystemTest {
 		
 		@Test
 		public void test20VirtualVotes() {
-			
-			Votante v = new Votante("90500084Y", "WEB", false, new Long(1));
+			Votacion votacion = new Votacion(new Date(), new Date(), "Referendum");
+			dao.insertVotacion(votacion, null);
+			List<Votacion> vs = dao.findAllVotaciones();
+			dao.insertCensos(new Censos("Prueba", "90500084Y", "prueba", "AST001", "prueba"));
+			Votante v = new Votante("90500084Y", "WEB", false,vs.get(0).getId());
+
 			iV.setVotante(v);
 			iV.setTypeVote(new InsertVirtualVotesP());		
 			assertEquals(v.getNif(), 
@@ -280,10 +289,17 @@ public class VotingSystemTest {
 		
 		@Test
 		public void test21VirtualVotes() {
-			Votante v = new Votante("90500084Y", "WEB", false, new Long(1));
+			Votacion votacion = new Votacion(new Date(), new Date(), "Referendum");
+			dao.insertVotacion(votacion, null);
+			List<Votacion> votaciones = dao.findAllVotaciones();
+			
+			dao.insertOpcion(new Opcion(1L, "Opcion 2", votaciones.get(0).getId()));
+			List<Opcion> ops = dao.findAllOpciones();
+			dao.insertCensos(new Censos("Prueba", "90500084Y", "prueba", "AST001", "prueba"));
+			Votante v = new Votante("90500084Y", "WEB", false,votaciones.get(0).getId());
 			iV.setVotante(v);
-			iV.setTypeVote(new InsertVirtualVotesP());		
-			Votos vs = new Votos(new Long (1), "WEB", new Long(1), 1, new Long(1), "13");
+			iV.setTypeVote(new InsertVirtualVotesP());	
+			Votos vs = new Votos(1L, "WEB", ops.get(0).getId(), 1,votaciones.get(0).getId(), "AST001");
 			iV.setVotos(vs);
 			
 			iV.getVoteInfo(new InsertVirtualVotesP());
