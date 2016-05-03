@@ -8,4 +8,5 @@ package es.uniovi.asw.virtualVotes.dBUpdate;
  */
 public interface WriteReport {
 
+	public void setLog(String datos);
 }
