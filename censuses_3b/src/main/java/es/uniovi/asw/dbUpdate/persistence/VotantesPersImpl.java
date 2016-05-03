@@ -80,7 +80,7 @@ public class VotantesPersImpl implements VotantesPers{
 			  c = Jdbc.getConnection();
 			  Statement st = c.createStatement();
 			  // borra toda la información de la tabla censos
-			  st.execute("DELETE FROM PUBLIC.CENSOS");
+			  st.execute("DELETE FROM CENSOS");
 			  System.out.println("Datos de la base borrados correctamente");
 			  st.close();
 			  c.close();

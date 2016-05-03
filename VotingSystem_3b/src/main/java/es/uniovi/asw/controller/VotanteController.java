@@ -25,7 +25,7 @@ public class VotanteController {
 			//Datos del usuario
 			String NIF = voto.getNif();
 			boolean estado = false;
-			Long idVotacion = new Long(1);
+			Long idVotacion = 1L;
 			//Datos del tipo de voto
 			String tipovoto = "";
 			if(voto.getTipoVoto().equals("WEB")){

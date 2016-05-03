@@ -26,7 +26,7 @@ public class VotosController {
 
 		if (votacion != null) {
 			// OBTENER LOS DATOS DEL FORMULARIO
-			Long idVotacion = new Long(1);
+			Long idVotacion = 1L;
 
 			// DATOS VOTANTE
 			String NIF = votacion.getNif();
@@ -46,11 +46,11 @@ public class VotosController {
 				String tipoVoto = TipoVoto.WEB.toString();
 				Long aux = null;
 				if(votacion.getOpcion().equals("SI"))
-					aux = 1L;
+					aux = 0L;
 				else if(votacion.getOpcion().equals("NO"))
-					aux=2L;
+					aux=1L;
 				else if(votacion.getOpcion().equals("BLANCO"))
-					aux=3L;
+					aux=2L;
 				Long opcionEscogida = aux;
 				//Long opcionEscogida = (long) (Double.parseDouble(votacion.getOpcion()));
 				String colegioElectoral = String.valueOf(censo.getCofColegioElectoral());
