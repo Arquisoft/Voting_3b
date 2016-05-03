@@ -74,14 +74,14 @@ public class Jdbc {
 		Class.forName(DRIVER).newInstance();
 		Connection con = getConnection();
 		java.sql.Statement stm = con.createStatement();
-
+/*
 		stm.execute(database.getProperty("BORRAR_TABLA_VOTOS"));
 		stm.execute(database.getProperty("BORRAR_TABLA_OPCION"));
 		stm.execute(database.getProperty("BORRAR_TABLA_VOTANTE"));
 		stm.execute(database.getProperty("BORRAR_TABLA_VOTACION"));
 		stm.execute(database.getProperty("BORRAR_TABLA_CENSOS"));
 		stm.execute(database.getProperty("BORRAR_TABLA_COLEGIOELECTORAL"));
-
+*/
 		stm.execute(database.getProperty("CREAR_TABLA_COLEGIO"));
 		stm.execute(database.getProperty("CREAR_TABLA_CENSOS"));
 		stm.execute(database.getProperty("CREAR_TABLA_VOTACION"));
@@ -97,15 +97,36 @@ public class Jdbc {
 		stm.execute(database.getProperty("INSERT_OPCION_1"));
 		stm.execute(database.getProperty("INSERT_OPCION_2"));
 		stm.execute(database.getProperty("INSERT_OPCION_3"));
-		stm.execute(database.getProperty("INSERT_CENSO_1"));
+		
+		/*stm.execute(database.getProperty("INSERT_CENSO_1"));
 		stm.execute(database.getProperty("INSERT_CENSO_2"));
-		stm.execute(database.getProperty("INSERT_CENSO_3"));
-		stm.execute(database.getProperty("INSERT_VOTANTE_1"));
+		stm.execute(database.getProperty("INSERT_CENSO_3"));*/
+		/*stm.execute(database.getProperty("INSERT_VOTANTE_1"));*/
 		
 		// stm.execute("truncate table CENSOS");
 
 		stm.close();
 		con.close();
+
+	}
+	
+	public static void restoreDatabase() {
+		try {
+			//Jdbc.crearDB();
+			
+			Connection con = getConnection();
+			java.sql.Statement stm = con.createStatement();
+	
+			stm.execute(database.getProperty("VACIAR_TABLA_VOTOS"));
+			stm.execute(database.getProperty("VACIAR_TABLA_OPCION"));
+			stm.execute(database.getProperty("VACIAR_TABLA_VOTANTE"));
+			stm.execute(database.getProperty("VACIAR_TABLA_VOTACION"));
+			stm.execute(database.getProperty("VACIAR_TABLA_CENSOS"));
+			stm.execute(database.getProperty("VACIAR_TABLA_COLEGIOELECTORAL"));
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 
 	}
 
@@ -160,7 +181,7 @@ public class Jdbc {
 		return threadConnection.get();
 	}
 
-	private static Properties loadProperties(String fileName) {
+	public static Properties loadProperties(String fileName) {
 
 		Properties prop = new Properties();
 		InputStream stream;

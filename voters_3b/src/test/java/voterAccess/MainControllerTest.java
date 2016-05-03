@@ -87,13 +87,13 @@ public class MainControllerTest {
 	public void postUserOK() throws Exception {
 		MainController m = new MainController();
 		
-//		CartaCensuses carta = new CartaPDF();
-//		WReportR report = new WReportR(new WReportP());
-//		Insert r = new InsertR(new RCensus(), carta, "src/test/resources/test.xlsx");
-//		r.addVotante(new InsertP(report) );
+		/*CartaCensuses carta = new CartaPDF();
+		WReportR report = new WReportR(new WReportP());
+		Insert r = new InsertR(new RCensus(), carta, "src/test/resources/test.xlsx");
+		r.addVotante(new InsertP(report) );*/
 		
 		
-		//PersistenceFactory.getVotantesPers().insert(new es.uniovi.asw.parser.Votante("Pepe", "000", "pepe@gmail.com", "AST001", "p3p3"), null);
+		PersistenceFactory.getVotantesPers().insert(new es.uniovi.asw.parser.Votante("Pepe", "000", "pepe@gmail.com", "AST001", "p3p3"), null);
 		Votante v = PersistenceFactory.getVotantesPers().findVotante("000");
 		
 		//Para recuperar el password aleatorio
@@ -103,6 +103,7 @@ public class MainControllerTest {
 		assertTrue(u.getCodColegioElectoral().equals("AST001"));
 		assertTrue(u.getNombre().equals("Pepe"));
 		assertTrue(u.getNIF().equals("000"));
+		PersistenceFactory.getVotantesPers().delete();
 	}
 
 	// USUARIO NO EXISTENTE

@@ -123,7 +123,7 @@ public class MainControllerTest {
 	@Test
 	public void testCensadosTotales(){
 		int total = Recuento.getCensadosTotales();
-		assertTrue("El censo total es de "+ total +" personas",total==4);
+		assertTrue("El censo total es de "+ total +" personas",total==0);
 	}
 	
 	@Test
@@ -131,7 +131,7 @@ public class MainControllerTest {
 		int oviedo = Recuento.getCensadosCiudad("Oviedo");
 		int vigo = Recuento.getCensadosCiudad("Vigo");
 		int santander = Recuento.getCensadosCiudad("Santander");
-		assertTrue("El censo total es de "+ oviedo +" personas",oviedo==1);
+		assertTrue("El censo total es de "+ oviedo +" personas",oviedo==0);
 		assertTrue("El censo total es de "+ vigo +" personas",vigo==0);
 		assertTrue("El censo total es de "+ santander +" personas",santander==0);
 	}

@@ -170,6 +170,7 @@ public void Parser(){
     archivo = new File(ruta);
     assertEquals(true, archivo.exists());
     archivo.delete();
+    PersistenceFactory.getVotantesPers().delete();
 }
 
 @Test

@@ -6,7 +6,7 @@
 	<version>0.0.1</version>
 	<name>censusesN</name>
 	<packaging>jar</packaging>
-	<description>Censuses SubSystem</description>
+	<description>Censuses SubSystem</description> 
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

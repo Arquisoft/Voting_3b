@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 
 import es.uniovi.asw.dbUpdate.persistence.Jdbc;
 import es.uniovi.asw.electors.dbUpdate.WriteReport;
@@ -18,6 +19,9 @@ import es.uniovi.asw.model.Votante;
 import es.uniovi.asw.model.Votos;
 
 public class ObjectDaoImpl implements ObjectDao {
+	
+	private static final String SCRIPT = "src/main/java/script.properties";
+	private static Properties database;
 
 	@Override
 	public void insertColegio(ColegioElectoral v) {
@@ -265,7 +269,7 @@ public class ObjectDaoImpl implements ObjectDao {
 			ps.setLong(1, id);
 
 			rs = ps.executeQuery();
-			while (rs.next()) {
+			if(rs.next()) {
 
 				Date diaInicio = new Date(rs.getDate(2).getTime());
 				Date diaFinal = new Date(rs.getDate(3).getTime());
@@ -411,22 +415,6 @@ public class ObjectDaoImpl implements ObjectDao {
 			e.printStackTrace();
 		}
 		return opciones;
-	}
-
-	@Override
-	public void restoreDatabase() {
-		try {
-			Jdbc.crearDB();
-		} catch (InstantiationException e) {
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-
 	}
 
 	/*

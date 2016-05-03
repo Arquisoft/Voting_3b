@@ -44,7 +44,15 @@ public class VotosController {
 
 				// Datos de la votacion
 				String tipoVoto = TipoVoto.WEB.toString();
-				Long opcionEscogida = (long) (Double.parseDouble(votacion.getOpcion()));
+				Long aux = null;
+				if(votacion.getOpcion().equals("SI"))
+					aux = 1L;
+				else if(votacion.getOpcion().equals("NO"))
+					aux=2L;
+				else if(votacion.getOpcion().equals("BLANCO"))
+					aux=3L;
+				Long opcionEscogida = aux;
+				//Long opcionEscogida = (long) (Double.parseDouble(votacion.getOpcion()));
 				String colegioElectoral = String.valueOf(censo.getCofColegioElectoral());
 
 				int totalVotos = 4;

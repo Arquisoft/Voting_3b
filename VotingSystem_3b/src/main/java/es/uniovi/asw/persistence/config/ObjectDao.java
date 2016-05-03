@@ -73,7 +73,5 @@ public interface ObjectDao {
 	List<Votos> findAllVotos();
 
 	
-	
-	public void restoreDatabase();
 
 }
