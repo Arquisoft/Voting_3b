@@ -26,12 +26,15 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.google.gson.JsonObject;
+
 import DBManagement.model.PersonaData;
 import VoterAccess.EmailNotFoundException;
 import controller.Application;
 import controller.MainController;
 import controller.Peticion;
 import controller.UserNotFoundException;
+import es.uniovi.asw.dbUpdate.persistence.Jdbc;
 import es.uniovi.asw.dbUpdate.persistence.PersistenceFactory;
 import es.uniovi.asw.parser.Votante;
 
@@ -56,6 +59,7 @@ public class MainControllerTest {
 		this.base = new URL("http://localhost:" + port + "/");
 		template = new TestRestTemplate();
 		mvc = new MockMvcBuilders().webAppContextSetup(wac).build();
+		Jdbc.restoreDatabase();
 	}
 
 	@Test
@@ -75,29 +79,6 @@ public class MainControllerTest {
 		System.out.println("RESULTADO JSON OBTENIDO: " + m.getResponse().getContentAsString());
 	}
 
-	// USUARIO CORRECTO
-	@Test
-	public void postUserOK() throws Exception {
-		MainController m = new MainController();
-		
-		/*CartaCensuses carta = new CartaPDF();
-		WReportR report = new WReportR(new WReportP());
-		Insert r = new InsertR(new RCensus(), carta, "src/test/resources/test.xlsx");
-		r.addVotante(new InsertP(report) );*/
-		
-		
-		PersistenceFactory.getVotantesPers().insert(new es.uniovi.asw.parser.Votante("Pepe", "000", "pepe@gmail.com", "AST001", "p3p3"), null);
-		Votante v = PersistenceFactory.getVotantesPers().findVotante("000");
-		
-		//Para recuperar el password aleatorio
-		Peticion p = new Peticion(v.getEmail(), v.getPassword());
-		ModelAndView user = m.user(p);
-		PersonaData u = (PersonaData) user.getModel().get("usuario");
-		assertTrue(u.getCodColegioElectoral().equals("AST001"));
-		assertTrue(u.getNombre().equals("Pepe"));
-		assertTrue(u.getNIF().equals("000"));
-		PersistenceFactory.getVotantesPers().delete();
-	}
 
 	// USUARIO NO EXISTENTE
 	@Test(expected = UserNotFoundException.class)
