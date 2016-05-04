@@ -3,7 +3,7 @@ package es.uniovi.asw.virtualVotes.virtualVotesConfig;
 import es.uniovi.asw.model.Censos;
 import es.uniovi.asw.model.Votante;
 import es.uniovi.asw.model.Votos;
-import es.uniovi.asw.virtualVotes.dBUpdate.InsertVirtualVotesP;
+import es.uniovi.asw.virtualVotes.dBUpdateVirtual.InsertVirtualVotesP;
 
 /*
  * Verifica los datos a enviar a DBUpdate.

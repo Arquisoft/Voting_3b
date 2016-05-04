@@ -1,4 +1,4 @@
-package es.uniovi.asw.virtualVotes.dBUpdate;
+package es.uniovi.asw.virtualVotes.dBUpdateVirtual;
 
 import es.uniovi.asw.model.Censos;
 import es.uniovi.asw.model.Votante;
@@ -53,8 +53,4 @@ public class InsertVirtualVotesP implements InsertVirtual {
 	public Votos findVoto(Votos votos) {
 		return new ObjectDaoImpl().findVoto(votos);
 	}
-
-	/*
-	 * fin metodos cecilia
-	 */
 }

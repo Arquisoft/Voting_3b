@@ -16,9 +16,9 @@ import org.junit.runners.MethodSorters;
 
 import es.uniovi.asw.dbUpdate.persistence.Jdbc;
 import es.uniovi.asw.dbUpdate.persistence.PersistenceFactory;
-import es.uniovi.asw.electors.dbUpdate.ConfigP;
-import es.uniovi.asw.electors.dbUpdate.InsertConfig;
-import es.uniovi.asw.electors.dbUpdate.WreportR;
+import es.uniovi.asw.electors.dbUpdateVot.ConfigP;
+import es.uniovi.asw.electors.dbUpdateVot.InsertConfig;
+import es.uniovi.asw.electors.dbUpdateVot.WreportR;
 import es.uniovi.asw.electors.electorsConfig.ConfigR;
 import es.uniovi.asw.electors.reportWriter.WreportP;
 import es.uniovi.asw.model.Censos;
@@ -29,13 +29,13 @@ import es.uniovi.asw.model.VotacionForm;
 import es.uniovi.asw.model.Votante;
 import es.uniovi.asw.model.Votos;
 import es.uniovi.asw.persistence.config.ObjectDaoImpl;
-import es.uniovi.asw.physicalVotes.dBUpdate.InsertVotesP;
-import es.uniovi.asw.physicalVotes.physicalVotesConfig.Insert;
+import es.uniovi.asw.physicalVotes.dBUpdatePhysical.InsertVotesP;
+import es.uniovi.asw.physicalVotes.physicalVotesConfig.InsertPhysical;
 import es.uniovi.asw.physicalVotes.physicalVotesConfig.InsertPhysicalR;
 import es.uniovi.asw.physicalVotes.physicalVotesConfig.RVotes;
 import es.uniovi.asw.physicalVotes.reportWriter.WriteReport;
 import es.uniovi.asw.reportWriter.WReportP;
-import es.uniovi.asw.virtualVotes.dBUpdate.InsertVirtualVotesP;
+import es.uniovi.asw.virtualVotes.dBUpdateVirtual.InsertVirtualVotesP;
 import es.uniovi.asw.virtualVotes.virtualVotesConfig.InsertVirtual;
 import es.uniovi.asw.virtualVotes.virtualVotesConfig.InsertVirtualR;
 
@@ -248,10 +248,10 @@ public class VotingSystemTest {
 		@Test
 		public void test18Votos() {
 			
-			es.uniovi.asw.physicalVotes.dBUpdate.WreportR report1 = 
-					new es.uniovi.asw.physicalVotes.dBUpdate.WreportR(
+			es.uniovi.asw.physicalVotes.dBUpdatePhysical.WreportR report1 = 
+					new es.uniovi.asw.physicalVotes.dBUpdatePhysical.WreportR(
 							new es.uniovi.asw.physicalVotes.reportWriter.WreportP());
-			Insert r1 = new InsertPhysicalR(new RVotes(),
+			InsertPhysical r1 = new InsertPhysicalR(new RVotes(),
 					"src/test/resources/votacionesFisicasMAL.xlsx");
 			boolean exito = r1.addVoto(new InsertVotesP(report1));
 			assertEquals(false, exito);

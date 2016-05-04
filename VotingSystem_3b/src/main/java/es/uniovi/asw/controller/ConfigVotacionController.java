@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import es.uniovi.asw.electors.dbUpdate.ConfigP;
+import es.uniovi.asw.electors.dbUpdateVot.ConfigP;
 import es.uniovi.asw.electors.electorsConfig.ConfigR;
 import es.uniovi.asw.model.VotacionForm;
 
@@ -31,7 +31,7 @@ public class ConfigVotacionController {
 				VotacionForm votacion = new VotacionForm(vot.getFechaInicio(), vot.getFechaFin(),
 						vot.getTipoVotacion());
 
-				new ConfigR(votacion).addVotacion(new ConfigP(new es.uniovi.asw.electors.dbUpdate.WreportR(
+				new ConfigR(votacion).addVotacion(new ConfigP(new es.uniovi.asw.electors.dbUpdateVot.WreportR(
 						new es.uniovi.asw.electors.reportWriter.WreportP())));
 				
 				model.addAttribute("resultado", "¡Felicidades, su la configuración de la votación ha sido guardada correctamente!");

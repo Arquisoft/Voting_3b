@@ -1,4 +1,4 @@
-package es.uniovi.asw.physicalVotes.dBUpdate;
+package es.uniovi.asw.physicalVotes.dBUpdatePhysical;
 
 import es.uniovi.asw.model.Votos;
 

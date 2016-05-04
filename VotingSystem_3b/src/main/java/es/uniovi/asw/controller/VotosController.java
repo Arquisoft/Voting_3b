@@ -11,7 +11,7 @@ import es.uniovi.asw.model.TipoVoto;
 import es.uniovi.asw.model.Votante;
 import es.uniovi.asw.model.VotoForm;
 import es.uniovi.asw.model.Votos;
-import es.uniovi.asw.virtualVotes.dBUpdate.InsertVirtualVotesP;
+import es.uniovi.asw.virtualVotes.dBUpdateVirtual.InsertVirtualVotesP;
 import es.uniovi.asw.virtualVotes.virtualVotesConfig.InsertVirtual;
 import es.uniovi.asw.virtualVotes.virtualVotesConfig.InsertVirtualR;
 

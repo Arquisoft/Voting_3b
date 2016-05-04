@@ -15,9 +15,9 @@ import es.uniovi.asw.model.TipoVotoForm;
 import es.uniovi.asw.model.VotacionForm;
 import es.uniovi.asw.model.VotoForm;
 import es.uniovi.asw.persistence.config.ObjectDaoImpl;
-import es.uniovi.asw.physicalVotes.dBUpdate.InsertVotesP;
-import es.uniovi.asw.physicalVotes.dBUpdate.WreportR;
-import es.uniovi.asw.physicalVotes.physicalVotesConfig.Insert;
+import es.uniovi.asw.physicalVotes.dBUpdatePhysical.InsertVotesP;
+import es.uniovi.asw.physicalVotes.dBUpdatePhysical.WreportR;
+import es.uniovi.asw.physicalVotes.physicalVotesConfig.InsertPhysical;
 import es.uniovi.asw.physicalVotes.physicalVotesConfig.InsertPhysicalR;
 import es.uniovi.asw.physicalVotes.physicalVotesConfig.RVotes;
 import es.uniovi.asw.physicalVotes.reportWriter.WreportP;
@@ -115,7 +115,7 @@ public class Main {
 	@RequestMapping("/physical")
 	public ModelAndView cargarVotosFisicos() {
 		WreportR report1 = new WreportR(new WreportP());
-		Insert r1 = new InsertPhysicalR(new RVotes(), "src/test/resources/votacionesFisicas.xlsx");
+		InsertPhysical r1 = new InsertPhysicalR(new RVotes(), "src/test/resources/votacionesFisicas.xlsx");
 		boolean exito = r1.addVoto(new InsertVotesP(report1));
 
 		if (exito)

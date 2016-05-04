@@ -1,4 +1,4 @@
-package es.uniovi.asw.electors.dbUpdate;
+package es.uniovi.asw.electors.dbUpdateVot;
 
 import java.util.Date;
 
@@ -8,7 +8,7 @@ import es.uniovi.asw.model.Votacion;
 /*
  * Verifica los datos a escribir.
  */
-public class WreportR implements es.uniovi.asw.electors.dbUpdate.WriteReport{
+public class WreportR implements es.uniovi.asw.electors.dbUpdateVot.WriteReport{
 
 	WriteReport report;
 	 

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import es.uniovi.asw.model.TipoVoto;
 import es.uniovi.asw.model.TipoVotoForm;
 import es.uniovi.asw.model.Votante;
-import es.uniovi.asw.virtualVotes.dBUpdate.InsertVirtualVotesP;
+import es.uniovi.asw.virtualVotes.dBUpdateVirtual.InsertVirtualVotesP;
 import es.uniovi.asw.virtualVotes.virtualVotesConfig.InsertVirtualR;
 
 @Controller

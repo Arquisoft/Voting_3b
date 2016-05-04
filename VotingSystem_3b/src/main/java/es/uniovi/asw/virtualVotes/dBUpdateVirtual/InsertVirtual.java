@@ -1,4 +1,4 @@
-package es.uniovi.asw.virtualVotes.dBUpdate;
+package es.uniovi.asw.virtualVotes.dBUpdateVirtual;
 
 import es.uniovi.asw.model.Votante;
 import es.uniovi.asw.model.Votos;

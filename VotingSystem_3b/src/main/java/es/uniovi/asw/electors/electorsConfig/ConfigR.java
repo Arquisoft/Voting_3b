@@ -3,7 +3,7 @@ package es.uniovi.asw.electors.electorsConfig;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-import es.uniovi.asw.electors.dbUpdate.ConfigP;
+import es.uniovi.asw.electors.dbUpdateVot.ConfigP;
 import es.uniovi.asw.model.Votacion;
 import es.uniovi.asw.model.VotacionForm;
 

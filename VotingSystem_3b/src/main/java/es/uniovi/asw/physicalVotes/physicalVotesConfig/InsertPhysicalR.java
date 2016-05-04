@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import es.uniovi.asw.model.Votos;
-import es.uniovi.asw.physicalVotes.dBUpdate.InsertVotesP;
+import es.uniovi.asw.physicalVotes.dBUpdatePhysical.InsertVotesP;
 
 /*
  * Verifica los datos a enviar a DBUpdate.
  */
-public class InsertPhysicalR implements Insert {
+public class InsertPhysicalR implements InsertPhysical {
 
 	private ReadVotes reader;
 	private String ruta;

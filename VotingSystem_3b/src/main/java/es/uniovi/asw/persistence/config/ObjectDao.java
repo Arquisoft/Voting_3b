@@ -2,7 +2,7 @@ package es.uniovi.asw.persistence.config;
 
 import java.util.List;
 
-import es.uniovi.asw.electors.dbUpdate.WriteReport;
+import es.uniovi.asw.electors.dbUpdateVot.WriteReport;
 import es.uniovi.asw.model.Censos;
 import es.uniovi.asw.model.ColegioElectoral;
 import es.uniovi.asw.model.Opcion;

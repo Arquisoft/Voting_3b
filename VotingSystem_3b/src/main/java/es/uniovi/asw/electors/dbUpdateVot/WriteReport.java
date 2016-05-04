@@ -1,4 +1,4 @@
-package es.uniovi.asw.electors.dbUpdate;
+package es.uniovi.asw.electors.dbUpdateVot;
 
 import es.uniovi.asw.model.Votacion;
 
