@@ -298,16 +298,17 @@ public void WriteReport(){
 public void Modelo() {
 	Censos cen = new Censos("paco", "5656565", "asd@gmail.com", "AT001", "asfln6");
 	cen.setEmail("as@gmail.com");
-	cen.getEmail();
+	assertEquals(cen.getEmail(), "as@gmail.com");
 	cen.setId(1);
-	cen.getId();
+	assertEquals(cen.getId(), 1);
 	cen.setNif("51651");
-	cen.getNif();
+	assertEquals(cen.getNif(), "51651");
 	
 	ColegioElectoral col = new ColegioElectoral("AST001", "circ", "ciudad", "com");
-	col.getCiudad();
-	col.getCodColegioElectoral();
-	col.getComunidadAutonoma();
+	assertEquals(col.getCiudad(), "ciudad");
+	assertEquals(col.getCodColegioElectoral(), "AST001");
+	assertEquals(col.getComunidadAutonoma(), "com");
+	assertEquals(col.getCircunscripcion(), "circ");
 	
 	Opcion op = new Opcion(new Long(1), "opcion1", new Long(1));
 	op.getId();
