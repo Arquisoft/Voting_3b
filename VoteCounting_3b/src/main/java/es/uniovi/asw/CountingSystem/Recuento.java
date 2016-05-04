@@ -35,16 +35,16 @@ public class Recuento {
 		if (mapaVotosTotales.isEmpty()) {
 			List<VotoData> votos = getVotosTotales();
 			for (VotoData voto : votos) {
-				Integer votosSi;
-				Integer votosNo;
-				Integer votosBlanco;
-				if (voto.getOpcion().compareTo(0L) == 0) {
+				Integer votosSi=0;
+				Integer votosNo=0;
+				Integer votosBlanco=0;
+				if (voto.getOpcion().compareTo(1L) == 0) {
 					votosSi = voto.getTotalVotos();
 					if (cantidad.containsKey("SI"))
 						cantidad.replace("SI", cantidad.get("SI"), cantidad.get("SI") + votosSi);
 					else
 						cantidad.put("SI", votosSi);
-				} else if (voto.getOpcion().compareTo(1L) == 0) {
+				} else if (voto.getOpcion().compareTo(2L) == 0) {
 					votosNo = voto.getTotalVotos();
 					if (cantidad.containsKey("NO"))
 						cantidad.replace("NO", cantidad.get("NO"), cantidad.get("NO") + votosNo);
@@ -148,16 +148,16 @@ public class Recuento {
 						aux.add(v);
 				});
 			for (VotoData voto : aux) {
-				Integer votosSi;
-				Integer votosNo;
-				Integer votosBlanco;
-				if (voto.getOpcion().compareTo(0L) == 0) {
+				Integer votosSi=0;
+				Integer votosNo=0;
+				Integer votosBlanco=0;
+				if (voto.getOpcion().compareTo(1L) == 0) {
 					votosSi = voto.getTotalVotos();
 					if (cantidad.containsKey("SI"))
 						cantidad.replace("SI", cantidad.get("SI"), cantidad.get("SI") + votosSi);
 					else
 						cantidad.put("SI", votosSi);
-				} else if (voto.getOpcion().compareTo(1L) == 0) {
+				} else if (voto.getOpcion().compareTo(2L) == 0) {
 					votosNo = voto.getTotalVotos();
 					if (cantidad.containsKey("NO"))
 						cantidad.replace("NO", cantidad.get("NO"), cantidad.get("NO") + votosNo);
@@ -193,16 +193,16 @@ public class Recuento {
 						aux.add(v);
 				});
 			for (VotoData voto : aux) {
-				Integer votosSi;
-				Integer votosNo;
-				Integer votosBlanco;
-				if (voto.getOpcion().compareTo(0L) == 0) {
+				Integer votosSi=0;
+				Integer votosNo=0;
+				Integer votosBlanco=0;
+				if (voto.getOpcion().compareTo(1L) == 0) {
 					votosSi = voto.getTotalVotos();
 					if (cantidad.containsKey("SI"))
 						cantidad.replace("SI", cantidad.get("SI"), cantidad.get("SI") + votosSi);
 					else
 						cantidad.put("SI", votosSi);
-				} else if (voto.getOpcion().compareTo(1L) == 0) {
+				} else if (voto.getOpcion().compareTo(2L) == 0) {
 					votosNo = voto.getTotalVotos();
 					if (cantidad.containsKey("NO"))
 						cantidad.replace("NO", cantidad.get("NO"), cantidad.get("NO") + votosNo);
