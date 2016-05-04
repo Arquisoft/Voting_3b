@@ -3,3 +3,7 @@
 3/5/2016;19:14:59;ERROR: En el voto: La votaci髇 tiene un valor inv醠ido
 4/5/2016;13:41:56;ERROR: En el voto: La opci贸n escogida es incorrecta
 4/5/2016;13:41:56;ERROR: En el voto: La votaci贸n tiene un valor inv谩lido
+4/5/2016;15:18:22;ERROR: En el voto: La opci贸n escogida es incorrecta
+4/5/2016;15:18:22;ERROR: En el voto: La votaci贸n tiene un valor inv谩lido
+4/5/2016;15:21:39;ERROR: En el voto: La opci贸n escogida es incorrecta
+4/5/2016;15:21:39;ERROR: En el voto: La votaci贸n tiene un valor inv谩lido
