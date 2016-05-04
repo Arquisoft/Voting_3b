@@ -9,7 +9,7 @@
 </div>
  <div id="dashboard_div">
 <form id="form_voters" th:action="user"
-		th:object="${peticion}" method="post">
+		th:object="${peticion}" method="post" enctype='application/json'>
 		
 		<label for="email">Email </label>
 		<input id="email" type="text" name="email" />

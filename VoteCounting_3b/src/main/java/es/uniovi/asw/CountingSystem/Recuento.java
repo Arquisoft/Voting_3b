@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import es.uniovi.asw.Factories;
 import es.uniovi.asw.dbManagement.model.ColegioData;
 import es.uniovi.asw.dbManagement.model.VotoData;
 
@@ -132,9 +131,7 @@ public class Recuento {
 			participacion.put(lugar, p * 100);
 		}
 		return Math.floor(participacion.get(lugar)*100)/100;
-		//return participacion.get(lugar);
-		
-		 //return 0.0;
+
 	}
 
 	public static Map<String, Integer> getVotosPorCiudad(String lugar) {
