@@ -1,13 +1,12 @@
 package DBManagement;
 
-import hello.UserNotFoundException;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import DBManagement.model.PersonaData;
+import controller.UserNotFoundException;
 import es.uniovi.asw.dbUpdate.persistence.Jdbc;
 
 public class GetVP implements GetVoter {

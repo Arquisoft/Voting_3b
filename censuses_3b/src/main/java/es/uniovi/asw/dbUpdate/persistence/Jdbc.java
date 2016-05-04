@@ -98,6 +98,10 @@ public class Jdbc {
 		stm.execute(database.getProperty("INSERT_OPCION_2"));
 		stm.execute(database.getProperty("INSERT_OPCION_3"));
 		
+
+		stm.execute(database.getProperty("INSERT_ADMIN"));
+		
+		
 		/*stm.execute(database.getProperty("INSERT_CENSO_1"));
 		stm.execute(database.getProperty("INSERT_CENSO_2"));
 		stm.execute(database.getProperty("INSERT_CENSO_3"));*/

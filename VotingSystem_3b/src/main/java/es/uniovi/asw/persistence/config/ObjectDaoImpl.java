@@ -198,6 +198,33 @@ public class ObjectDaoImpl implements ObjectDao {
 		return v;
 		
 	}
+	
+	@Override
+	public Censos findByEmailAndPassword(String email, String password){
+		Censos votante = null;
+		Connection c = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		
+		try {
+
+			c = Jdbc.getConnection();
+			ps = c.prepareStatement("select * from censos where email=? and password=?");
+			ps.setString(1, email);
+			ps.setString(2, password);
+			rs = ps.executeQuery();
+			if(rs.next()){
+				votante = new Censos(rs.getString("nombre"), rs.getString("nif"), rs.getString("email"),
+						rs.getString("codcolegioelectoral"), rs.getString("password"));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			Jdbc.close(rs, ps, c);
+		}
+		return votante;
+	}
+	
 
 	@Override
 	public List<Censos> findAllCensos() {

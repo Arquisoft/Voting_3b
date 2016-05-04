@@ -10,7 +10,6 @@ import es.uniovi.asw.parser.read.ReadCensus;
 
 public class InsertR implements Insert {
 	
-	
 	private ReadCensus reader;
 	private CartaCensuses carta;
 	private String ruta;	//ruta del fichero en el que se encuentra la lista de votantes

@@ -3,7 +3,7 @@ package DBManagement;
 import java.sql.SQLException;
 
 import DBManagement.model.PersonaData;
-import hello.UserNotFoundException;
+import controller.UserNotFoundException;
 
 public class VoterService implements GetVoter{
 	

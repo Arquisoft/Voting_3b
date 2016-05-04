@@ -4,10 +4,6 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import hello.Application;
-import hello.MainController;
-import hello.Peticion;
-import hello.UserNotFoundException;
 
 import java.net.URL;
 
@@ -32,6 +28,10 @@ import org.springframework.web.servlet.ModelAndView;
 
 import DBManagement.model.PersonaData;
 import VoterAccess.EmailNotFoundException;
+import controller.Application;
+import controller.MainController;
+import controller.Peticion;
+import controller.UserNotFoundException;
 import es.uniovi.asw.dbUpdate.persistence.PersistenceFactory;
 import es.uniovi.asw.parser.Votante;
 

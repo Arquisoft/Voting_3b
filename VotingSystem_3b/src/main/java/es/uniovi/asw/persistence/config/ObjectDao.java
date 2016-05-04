@@ -52,16 +52,13 @@ public interface ObjectDao {
 
 	// Votos
 
-	
 	boolean insertVotos(Votos v);
-	
+
 	Votos findVotos(Long id);
 
 	boolean updateVotos(Votos v);
 
-	
-
-	//Votante
+	// Votante
 	boolean insertVotante(Votante v);
 
 	boolean setTipoVoto(Votante v);
@@ -69,8 +66,10 @@ public interface ObjectDao {
 	boolean setEstadoVoto(Votante v);
 
 	Votante findVotante(String NIF);
-	
+
 	List<Votos> findAllVotos();
+
+	Censos findByEmailAndPassword(String user, String password) ;
 
 	
 

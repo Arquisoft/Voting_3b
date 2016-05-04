@@ -1,6 +1,6 @@
-package hello;
+package es.uniovi.asw.controller;
 
-public class Peticion {
+public class Login {
 
 	String email;
 	String password;
@@ -18,13 +18,13 @@ public class Peticion {
 		this.password = password;
 	}
 	
-	public Peticion(String email, String password) {
+	public Login(String email, String password) {
 		super();
 		this.email = email;
 		this.password = password;
 	}
 	
-	public Peticion(){
+	public Login(){
 		
 	}
 }

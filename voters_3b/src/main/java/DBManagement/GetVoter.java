@@ -1,10 +1,9 @@
 package DBManagement;
 
-import hello.UserNotFoundException;
-
 import java.sql.SQLException;
 
 import DBManagement.model.PersonaData;
+import controller.UserNotFoundException;
 
 public interface GetVoter {
 	

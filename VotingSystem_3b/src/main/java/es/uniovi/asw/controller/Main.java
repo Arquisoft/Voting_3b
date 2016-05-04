@@ -7,11 +7,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import es.uniovi.asw.model.Censos;
 import es.uniovi.asw.model.TipoVotoForm;
 import es.uniovi.asw.model.VotacionForm;
 import es.uniovi.asw.model.VotoForm;
+import es.uniovi.asw.persistence.config.ObjectDaoImpl;
 import es.uniovi.asw.physicalVotes.dBUpdate.InsertVotesP;
 import es.uniovi.asw.physicalVotes.dBUpdate.WreportR;
 import es.uniovi.asw.physicalVotes.physicalVotesConfig.Insert;
@@ -23,7 +26,7 @@ import es.uniovi.asw.physicalVotes.reportWriter.WreportP;
 public class Main {
 
 	private static final Logger LOG = LoggerFactory.getLogger(Main.class);
-	//private Votacion v = new Votacion();
+	// private Votacion v = new Votacion();
 	// HACE FALTA INICIALIZAR LA VOTACION SACANDOLA DE LA BASE DE DATOS EN ALGUN
 	// MOMENTO PARA COMPROBAR LAS FECHAS Y DEMAS
 	Date fechaActual = new Date();
@@ -39,6 +42,38 @@ public class Main {
 		LOG.info("Landing page access");
 		return new ModelAndView("landing");
 
+	}
+
+	// LOGIIIINNNN
+	@RequestMapping(value = "/login", method = { RequestMethod.POST, RequestMethod.GET }, consumes = {
+			"application/*" })
+	public ModelAndView user(Login login, Model model) {
+
+		// validador = new GetVI();
+		// PersonaData ui = null;
+		System.out.println(login.getEmail());
+		System.out.println(login.getPassword());
+
+		ModelAndView mv = null;
+		if (login.getEmail().equals("admin")) {
+			VotacionForm n = new VotacionForm();
+			model.addAttribute("vot", n); // formulario de configuracion- admin
+
+			mv = new ModelAndView("config");
+		} else{
+			Censos c = new ObjectDaoImpl().findByEmailAndPassword(login.getEmail(), login.getPassword());
+			if (c != null) {
+				mv = new ModelAndView("indexuser");
+			}
+		}
+
+		// pepe1
+		// P3P3pepÇ
+		// ui = validador.getVoter(peticion.getEmail(), peticion.getPassword());
+		// System.out.println("Colegio " + ui.getCodColegioElectoral());
+		// mv.addObject("usuario", ui);
+
+		return mv;
 	}
 
 	@RequestMapping("/user")
@@ -66,7 +101,6 @@ public class Main {
 		return new ModelAndView("tipovotacion");
 	}
 
-	
 	@RequestMapping("/admin")
 	public ModelAndView Admin(Model model) {
 		LOG.info("Pagina de admin");

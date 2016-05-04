@@ -8,7 +8,8 @@
 
 	<div class="form-group">
 		<form action="/user" method="post" class="form-horizontal">
-			<button type="submit" class="btn btn-primary">Pagina votacion usuario</button>
+			<button type="submit" class="btn btn-primary">Pagina
+				votacion usuario</button>
 		</form>
 
 		<br />
@@ -17,7 +18,22 @@
 			<button type="submit" class="btn btn-primary">Pagina admin</button>
 		</form>
 
-		
+
+<br /><br /><br />
+
+		<form id="form_login" th:action="login" th:object="${login}"
+			method="post">
+
+			<label for="email">Email </label> <input id="email" type="text"
+				name="email" /> 
+			<label for="pass">Password </label> <input
+				id="pass" type="password" name="password" />
+
+			<button type="submit">Enviar</button>
+
+		</form>
+
+
 	</div>
 
 </body>

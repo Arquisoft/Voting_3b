@@ -1,7 +1,7 @@
 package VoterAccess;
 
 import DBManagement.model.PersonaData;
-import hello.UserNotFoundException;
+import controller.UserNotFoundException;
 
 public interface GetVoterInfo {
 	

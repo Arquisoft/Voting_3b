@@ -1,10 +1,9 @@
 package VoterAccess;
 
-import hello.UserNotFoundException;
-
 import java.sql.SQLException;
 
 import DBManagement.model.PersonaData;
+import controller.UserNotFoundException;
 
 /*Hace la validación del usuario*/
 public class GetVI implements GetVoterInfo {
