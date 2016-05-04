@@ -42,7 +42,8 @@ public class MainController {
 			if(ui!=null){	
 				JsonObject json = new JsonObject();
 				json.addProperty("Usuario", ui.getNombre());
-				json.addProperty("Colegio", ui.getCodColegioElectoral());	
+				json.addProperty("Colegio", ui.getCodColegioElectoral());
+				json.addProperty("nif", ui.getNIF());
 				mv.addObject("usuario", json);
 			}
 			else
