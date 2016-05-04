@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import es.uniovi.asw.Factories;
 import es.uniovi.asw.dbManagement.model.ColegioData;
 import es.uniovi.asw.dbManagement.model.VotoData;
 
