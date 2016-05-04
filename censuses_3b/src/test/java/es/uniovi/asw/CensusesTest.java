@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Map;
 
 import org.junit.Test;
@@ -18,6 +19,8 @@ import es.uniovi.asw.model.Censos;
 import es.uniovi.asw.model.ColegioElectoral;
 import es.uniovi.asw.model.Opcion;
 import es.uniovi.asw.model.TipoVotoForm;
+import es.uniovi.asw.model.VotacionForm;
+import es.uniovi.asw.model.Votos;
 import es.uniovi.asw.parser.InsertR;
 import es.uniovi.asw.parser.Votante;
 import es.uniovi.asw.parser.carta.CartaCensuses;
@@ -303,24 +306,55 @@ public void Modelo() {
 	assertEquals(cen.getId(), 1);
 	cen.setNif("51651");
 	assertEquals(cen.getNif(), "51651");
+	cen.setNombre("jose");
+	assertEquals(cen.getNombre(), "jose");
+	cen.setNombre("AT001");
+	assertEquals(cen.getCofColegioElectoral(), "AT001");
+	cen.setPassword("pass");
+	assertEquals(cen.getPassword(), "pass");
+	
 	
 	ColegioElectoral col = new ColegioElectoral("AST001", "circ", "ciudad", "com");
+	col.setCiudad("ciudad");
 	assertEquals(col.getCiudad(), "ciudad");
+	col.setCodColegioElectoral("AST001");
 	assertEquals(col.getCodColegioElectoral(), "AST001");
+	col.setComunidadAutonoma("com");
 	assertEquals(col.getComunidadAutonoma(), "com");
+	col.setCircunscripcion("circ");
 	assertEquals(col.getCircunscripcion(), "circ");
 	
 	Opcion op = new Opcion(new Long(1), "opcion1", new Long(1));
-	op.getId();
-	op.getIdVotacion();
-	op.getNombre();
+	assertEquals(op.getId(), new Long(1));
+	assertEquals(op.getIdVotacion(), new Long(1));
+	assertEquals(op.getNombre(), "opcion1");
+
 	
 	TipoVotoForm tip = new TipoVotoForm("WEB");
 	tip.getNif();
-	tip.getTipoVoto();
+	assertEquals(tip.getTipoVoto(), "WEB");
 	
-	new Votante("Pedro", "56788104R", "pedro@gmail.com", "AST001", "ghyts52?");
-    
+	Votante vot = new Votante("Pedro", "56788104R", "pedro@gmail.com", "AST001", "ghyts52?");
+	assertEquals(vot.getNombre(), "Pedro");
+	assertEquals(vot.getPassword(), "ghyts52");
+	assertEquals(vot.getEmail(), "pedro@gmail.com");
+	assertEquals(vot.getNIF(), "56788104R");
+	assertEquals(vot.getCodColegioElectoral(), "AST001");
+
+
+	VotacionForm votf = new VotacionForm(new Date().toString(), new Date().toString(), "s");
+	assertEquals(votf.getTipoVotacion(), "s");
+	votf.getFechaFin();
+	votf.getFechaInicio();
+	
+	Votos v = new Votos("s", new Long(1), 1, new Long(1), "AST001");
+	assertEquals(v.getColegioElectoral(), "AST001");
+	assertEquals(v.getOpcionEscogida(), new Long(1));
+	assertEquals(v.getIdVotacion(), new Long(1));
+	assertEquals(v.getTipoVoto(), 1);
+	assertEquals(v.getOpcionEscogida(), "s");
+	
+
 }
 
 
