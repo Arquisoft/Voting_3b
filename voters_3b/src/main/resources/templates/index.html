@@ -9,14 +9,14 @@
 </div>
  <div id="dashboard_div">
 <form id="form_voters" th:action="user"
-		th:object="${peticion}" method="post">
+		th:object="${peticion}" method="post" enctype='application/json'>
 		
 		<label for="email">Email </label>
 		<input id="email" type="text" name="email" />
 		
 
 		<label for="pass">Password </label>
-		<input id="pass" type="text" name="password" />
+		<input id="pass" type="password" name="password" />
 		
 		<button type="submit">Enviar</button>
 

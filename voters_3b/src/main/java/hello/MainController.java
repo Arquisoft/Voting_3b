@@ -1,11 +1,15 @@
 package hello;
 
+import org.apache.http.HttpResponseFactory;
+import org.hibernate.validator.internal.xml.ReturnValueType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.google.gson.JsonObject;
 
 import DBManagement.model.PersonaData;
 import VoterAccess.EmailNotFoundException;
@@ -21,7 +25,6 @@ public class MainController {
 
 	@RequestMapping(value = "/", method = { RequestMethod.POST, RequestMethod.GET })
 	public ModelAndView landing() {
-		System.out.println("algo llega");
 		ModelAndView mv = new ModelAndView("index");
 		return mv;
 	}
@@ -33,11 +36,19 @@ public class MainController {
 		PersonaData ui = null;
 		ModelAndView mv = new ModelAndView("usuario");
 		try {
-			// pepe1
-			// P3P3pepÇ
+
 			ui = validador.getVoter(peticion.getEmail(), peticion.getPassword());
-			System.out.println("Colegio " + ui.getCodColegioElectoral());
-			mv.addObject("usuario", ui);
+			
+			if(ui!=null){	
+				JsonObject json = new JsonObject();
+				json.addProperty("Usuario", ui.getNombre());
+				json.addProperty("Colegio", ui.getCodColegioElectoral());	
+				mv.addObject("usuario", json);
+			}
+			else
+				mv = new ModelAndView("error");
+				
+			
 		} catch (EmailNotFoundException m) {
 			throw m;
 		} catch (UserNotFoundException e) {
