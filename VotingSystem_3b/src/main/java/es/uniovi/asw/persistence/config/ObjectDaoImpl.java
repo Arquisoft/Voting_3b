@@ -48,11 +48,6 @@ public class ObjectDaoImpl implements ObjectDao {
 
 	}
 
-	@Override
-	public void deleteColegio(String codigo) {
-		// TODO Auto-generated method stub
-
-	}
 
 	@Override
 	public ColegioElectoral findColegio(String codigo) {
@@ -156,18 +151,6 @@ public class ObjectDaoImpl implements ObjectDao {
 	}
 
 	@Override
-	public void deleteCensos(int id) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public Votante findCensos(int id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public Censos findCensosByNif(String nif) {
 		Connection c;
 		PreparedStatement ps;
@@ -227,12 +210,6 @@ public class ObjectDaoImpl implements ObjectDao {
 	
 
 	@Override
-	public List<Censos> findAllCensos() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public void insertVotacion(Votacion v, WriteReport r) {
 		Connection con = null;
 		PreparedStatement ps = null;
@@ -256,7 +233,7 @@ public class ObjectDaoImpl implements ObjectDao {
 
 	}
 
-	@Override
+	/*@Override
 	public void deleteVotacion(Long id) {
 		Connection con = null;
 		PreparedStatement ps = null;
@@ -276,7 +253,7 @@ public class ObjectDaoImpl implements ObjectDao {
 			e.printStackTrace();
 		}
 
-	}
+	}*/
 
 	@Override
 	public Votacion findVotacion(Long id) {
@@ -403,11 +380,6 @@ public class ObjectDaoImpl implements ObjectDao {
 
 	}
 
-	@Override
-	public Votante findOpcion(Long opcion) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public List<Opcion> findAllOpciones() {

@@ -53,16 +53,4 @@ public class WreportR implements es.uniovi.asw.electors.dbUpdate.WriteReport{
 	}
 
 
-
-
-
-
-
-	
-	
-	
-	
-	
-	
-
 }

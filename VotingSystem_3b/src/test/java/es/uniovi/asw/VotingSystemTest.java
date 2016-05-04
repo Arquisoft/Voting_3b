@@ -1,7 +1,10 @@
 package es.uniovi.asw;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -12,6 +15,7 @@ import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
 import es.uniovi.asw.dbUpdate.persistence.Jdbc;
+import es.uniovi.asw.dbUpdate.persistence.PersistenceFactory;
 import es.uniovi.asw.electors.dbUpdate.ConfigP;
 import es.uniovi.asw.electors.dbUpdate.InsertConfig;
 import es.uniovi.asw.electors.dbUpdate.WreportR;
@@ -29,6 +33,8 @@ import es.uniovi.asw.physicalVotes.dBUpdate.InsertVotesP;
 import es.uniovi.asw.physicalVotes.physicalVotesConfig.Insert;
 import es.uniovi.asw.physicalVotes.physicalVotesConfig.InsertPhysicalR;
 import es.uniovi.asw.physicalVotes.physicalVotesConfig.RVotes;
+import es.uniovi.asw.physicalVotes.reportWriter.WriteReport;
+import es.uniovi.asw.reportWriter.WReportP;
 import es.uniovi.asw.virtualVotes.dBUpdate.InsertVirtualVotesP;
 import es.uniovi.asw.virtualVotes.virtualVotesConfig.InsertVirtual;
 import es.uniovi.asw.virtualVotes.virtualVotesConfig.InsertVirtualR;

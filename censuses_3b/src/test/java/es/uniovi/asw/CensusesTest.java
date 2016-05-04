@@ -14,6 +14,10 @@ import org.junit.Test;
 import es.uniovi.asw.dbUpdate.InsertP;
 import es.uniovi.asw.dbUpdate.WReportR;
 import es.uniovi.asw.dbUpdate.persistence.PersistenceFactory;
+import es.uniovi.asw.model.Censos;
+import es.uniovi.asw.model.ColegioElectoral;
+import es.uniovi.asw.model.Opcion;
+import es.uniovi.asw.model.TipoVotoForm;
 import es.uniovi.asw.parser.InsertR;
 import es.uniovi.asw.parser.Votante;
 import es.uniovi.asw.parser.carta.CartaCensuses;
@@ -290,6 +294,33 @@ public void WriteReport(){
 	
 }
 
+@Test
+public void Modelo() {
+	Censos cen = new Censos("paco", "5656565", "asd@gmail.com", "AT001", "asfln6");
+	cen.setEmail("as@gmail.com");
+	cen.getEmail();
+	cen.setId(1);
+	cen.getId();
+	cen.setNif("51651");
+	cen.getNif();
+	
+	ColegioElectoral col = new ColegioElectoral("AST001", "circ", "ciudad", "com");
+	col.getCiudad();
+	col.getCodColegioElectoral();
+	col.getComunidadAutonoma();
+	
+	Opcion op = new Opcion(new Long(1), "opcion1", new Long(1));
+	op.getId();
+	op.getIdVotacion();
+	op.getNombre();
+	
+	TipoVotoForm tip = new TipoVotoForm("WEB");
+	tip.getNif();
+	tip.getTipoVoto();
+	
+	new Votante("Pedro", "56788104R", "pedro@gmail.com", "AST001", "ghyts52?");
+    
+}
 
 
 }

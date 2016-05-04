@@ -14,9 +14,7 @@ public interface ObjectDao {
 
 	// ColegioElectoral
 	public void insertColegio(ColegioElectoral v);
-
-	public void deleteColegio(String codigo);
-
+	
 	public ColegioElectoral findColegio(String codigo);
 
 	public List<ColegioElectoral> findAllColegios();
@@ -24,18 +22,10 @@ public interface ObjectDao {
 	// Censos
 	public void insertCensos(Censos c);
 
-	public void deleteCensos(int id);
-
-	public Votante findCensos(int id);
-
 	public Censos findCensosByNif(String nif);
-
-	public List<Censos> findAllCensos();
 
 	// Votacion
 	public void insertVotacion(Votacion v, WriteReport r);
-
-	public void deleteVotacion(Long id);
 
 	public Votacion findVotacion(Long id);
 
@@ -45,8 +35,6 @@ public interface ObjectDao {
 	public void insertOpcion(Opcion o);
 
 	public void deleteOpcion(Long id);
-
-	public Votante findOpcion(Long opcion);
 
 	public List<Opcion> findAllOpciones();
 
