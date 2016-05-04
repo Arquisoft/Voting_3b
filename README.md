@@ -11,6 +11,6 @@ Voting System
 # Authors
 
 * Cecilia Tudela Cueto
-* Johan Arif Clavijo Muñoz
+* [Johan Arif Clavijo Muñoz](https://github.com/SirJ0han)
 * Gabriela Agnieszka Lagowska
 * Damián Prieto
