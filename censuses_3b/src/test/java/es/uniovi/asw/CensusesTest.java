@@ -334,7 +334,7 @@ public void Modelo() {
 	tip.getNif();
 	assertEquals(tip.getTipoVoto(), "WEB");
 	
-	Votante vot = new Votante("Pedro", "56788104R", "pedro@gmail.com", "AST001", "ghyts52?");
+	Votante vot = new Votante("Pedro", "56788104R", "pedro@gmail.com", "AST001", "ghyts52");
 	assertEquals(vot.getNombre(), "Pedro");
 	assertEquals(vot.getPassword(), "ghyts52");
 	assertEquals(vot.getEmail(), "pedro@gmail.com");
@@ -351,8 +351,7 @@ public void Modelo() {
 	assertEquals(v.getColegioElectoral(), "AST001");
 	assertEquals(v.getOpcionEscogida(), new Long(1));
 	assertEquals(v.getIdVotacion(), new Long(1));
-	assertEquals(v.getTipoVoto(), 1);
-	assertEquals(v.getOpcionEscogida(), "s");
+	assertEquals(v.getTipoVoto(), "s");
 	
 
 }
