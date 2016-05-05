@@ -145,32 +145,5 @@ public class MainControllerTest {
 		assertTrue("El censo total es de "+ asturias +" personas",asturias==0);
 	}
 	
-	@Test
-	public void testPersonaData(){
-		List<PersonaData> personas = Factories.persistence.census().getPersonas();
-		assertTrue(!personas.equals(null));
-	}
-	
-	@Test
-	public void testOpcionData(){
-		Factories.persistence.votes();
-	}
-	
-	@Test
-	public void testVotacionData(){
-		Factories.persistence.votes();
-	}
-	
-	@Test
-	public void testVotanteData(){
-		
-	}
-	
-	@Test
-	public void testVotoData(){
-		List<VotoData> votos = Factories.persistence.votes().getVotos();
-		assertTrue(votos==null);
-		
-	}
 
 }
