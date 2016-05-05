@@ -23,8 +23,6 @@ public class Personas {
 			ps = c.prepareStatement("SELECT * FROM CENSOS");
 			rs = ps.executeQuery();
 			while (rs.next()) {
-				// (String nombre, String nIF, String email, int
-				// codColegioElectoral, String password) {
 				personas.add(new PersonaData(rs.getString("nombre"), rs.getString("nif"), rs.getString("email"),
 						rs.getString("codColegioElectoral"), rs.getString("password")));
 			}

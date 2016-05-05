@@ -21,7 +21,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
+import es.uniovi.asw.CountingSystem.Factories;
 import es.uniovi.asw.CountingSystem.Recuento;
+import es.uniovi.asw.dbManagement.model.PersonaData;
+import es.uniovi.asw.dbManagement.model.VotoData;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
@@ -140,6 +143,36 @@ public class MainControllerTest {
 	public void testCensadosComunidad(){
 		int asturias = Recuento.getCensadosComunidad("Asturias");
 		assertTrue("El censo total es de "+ asturias +" personas",asturias==0);
+	}
+	
+	@Test
+	public void testPersonaData(){
+		List<PersonaData> personas = Factories.persistence.census().getPersonas();
+		assertTrue(!personas.equals(null));
+	}
+	
+	@Test
+	public void testOpcionData(){
+		Factories.persistence.votes();
+	}
+	
+	@Test
+	public void testVotacionData(){
+		Factories.persistence.votes();
+	}
+	
+	@Test
+	public void testVotanteData(){
+		
+	}
+	
+	@Test
+	public void testVotoData(){
+		List<VotoData> votos = Factories.persistence.votes().getVotos();
+		for(VotoData v:votos)
+			v.setIdVotacion(1L);
+		assertTrue(!votos.isEmpty());
+		
 	}
 
 }
