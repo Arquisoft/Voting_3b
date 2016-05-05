@@ -169,9 +169,7 @@ public class MainControllerTest {
 	@Test
 	public void testVotoData(){
 		List<VotoData> votos = Factories.persistence.votes().getVotos();
-		for(VotoData v:votos)
-			v.setIdVotacion(1L);
-		assertTrue(!votos.isEmpty());
+		assertTrue(votos==null);
 		
 	}
 
