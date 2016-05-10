@@ -1,7 +1,5 @@
 package controller;
 
-import org.apache.http.HttpResponseFactory;
-import org.hibernate.validator.internal.xml.ReturnValueType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -9,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.google.gson.JsonObject;
-
 import DBManagement.model.PersonaData;
 import VoterAccess.EmailNotFoundException;
 import VoterAccess.GetVI;
 import VoterAccess.GetVoterInfo;
+
+import com.google.gson.JsonObject;
 
 @Controller
 @RestController
