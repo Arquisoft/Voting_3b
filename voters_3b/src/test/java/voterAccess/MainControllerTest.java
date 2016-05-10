@@ -24,20 +24,12 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.servlet.ModelAndView;
-
-import voterAccess.EmailNotFoundException;
-
-import com.google.gson.JsonObject;
 
 import controller.Application;
 import controller.MainController;
 import controller.Peticion;
 import controller.UserNotFoundException;
-import dbManagement.model.PersonaData;
 import es.uniovi.asw.dbUpdate.persistence.Jdbc;
-import es.uniovi.asw.dbUpdate.persistence.PersistenceFactory;
-import es.uniovi.asw.parser.Votante;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
