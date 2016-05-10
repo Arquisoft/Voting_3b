@@ -21,10 +21,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import es.uniovi.asw.CountingSystem.Factories;
 import es.uniovi.asw.CountingSystem.Recuento;
-import es.uniovi.asw.dbManagement.model.PersonaData;
-import es.uniovi.asw.dbManagement.model.VotoData;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
