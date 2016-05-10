@@ -1,9 +1,9 @@
-package VoterAccess;
+package voterAccess;
 
 import java.sql.SQLException;
 
-import DBManagement.model.PersonaData;
 import controller.UserNotFoundException;
+import dbManagement.model.PersonaData;
 
 /*Hace la validación del usuario*/
 public class GetVI implements GetVoterInfo {

@@ -1,4 +1,4 @@
-package DBManagement.model;
+package dbManagement.model;
 
 public class VotoData {
 	Long id;

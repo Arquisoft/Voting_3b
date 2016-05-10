@@ -1,9 +1,9 @@
-package DBManagement;
+package dbManagement;
 
 import java.sql.SQLException;
 
-import DBManagement.model.PersonaData;
 import controller.UserNotFoundException;
+import dbManagement.model.PersonaData;
 
 public interface GetVoter {
 	

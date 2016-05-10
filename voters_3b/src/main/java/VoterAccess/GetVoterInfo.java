@@ -1,7 +1,7 @@
-package VoterAccess;
+package voterAccess;
 
-import DBManagement.model.PersonaData;
 import controller.UserNotFoundException;
+import dbManagement.model.PersonaData;
 
 public interface GetVoterInfo {
 	

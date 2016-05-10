@@ -7,12 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
-import DBManagement.model.PersonaData;
-import VoterAccess.EmailNotFoundException;
-import VoterAccess.GetVI;
-import VoterAccess.GetVoterInfo;
+import voterAccess.EmailNotFoundException;
+import voterAccess.GetVI;
+import voterAccess.GetVoterInfo;
 
 import com.google.gson.JsonObject;
+
+import dbManagement.model.PersonaData;
 
 @Controller
 @RestController

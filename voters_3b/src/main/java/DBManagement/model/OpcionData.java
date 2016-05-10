@@ -1,4 +1,4 @@
-package DBManagement.model;
+package dbManagement.model;
 
 import java.util.List;
 

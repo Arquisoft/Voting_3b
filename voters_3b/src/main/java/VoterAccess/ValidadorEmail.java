@@ -1,4 +1,4 @@
-package VoterAccess;
+package voterAccess;
 
 import java.util.regex.*;
 

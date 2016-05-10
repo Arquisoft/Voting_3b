@@ -1,6 +1,6 @@
-package VoterAccess;
+package voterAccess;
 
-import DBManagement.VoterService;
+import dbManagement.VoterService;
 
 public class ServicesFactory {
 
