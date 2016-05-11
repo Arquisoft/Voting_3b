@@ -1,6 +1,6 @@
-package es.uniovi.asw.CountingSystem;
+package es.uniovi.asw.countingSystem;
 
-import es.uniovi.asw.CountingSystem.impl.H2ServicesFactory;
+import es.uniovi.asw.countingSystem.impl.H2ServicesFactory;
 import es.uniovi.asw.dbManagement.PersistenceFactory;
 import es.uniovi.asw.dbManagement.impl.H2PersistenceFactory;
 

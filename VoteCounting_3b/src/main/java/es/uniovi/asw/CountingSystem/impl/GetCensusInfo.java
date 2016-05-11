@@ -1,11 +1,11 @@
-package es.uniovi.asw.CountingSystem.impl;
+package es.uniovi.asw.countingSystem.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import es.uniovi.asw.CountingSystem.IGetCensusInfo;
-import es.uniovi.asw.CountingSystem.impl.classes.ColegiosInfo;
-import es.uniovi.asw.CountingSystem.impl.classes.PersonasCenso;
+import es.uniovi.asw.countingSystem.IGetCensusInfo;
+import es.uniovi.asw.countingSystem.impl.classes.ColegiosInfo;
+import es.uniovi.asw.countingSystem.impl.classes.PersonasCenso;
 import es.uniovi.asw.dbManagement.model.ColegioData;
 
 public class GetCensusInfo implements IGetCensusInfo {

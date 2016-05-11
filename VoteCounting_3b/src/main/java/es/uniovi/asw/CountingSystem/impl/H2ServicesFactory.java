@@ -1,8 +1,8 @@
-package es.uniovi.asw.CountingSystem.impl;
+package es.uniovi.asw.countingSystem.impl;
 
-import es.uniovi.asw.CountingSystem.IGetCensusInfo;
-import es.uniovi.asw.CountingSystem.IGetVotesInfo;
-import es.uniovi.asw.CountingSystem.ServicesFactory;
+import es.uniovi.asw.countingSystem.IGetCensusInfo;
+import es.uniovi.asw.countingSystem.IGetVotesInfo;
+import es.uniovi.asw.countingSystem.ServicesFactory;
 
 public class H2ServicesFactory implements ServicesFactory{
 

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import es.uniovi.asw.CountingSystem.Recuento;
+import es.uniovi.asw.countingSystem.Recuento;
 
 @Controller
 @RestController

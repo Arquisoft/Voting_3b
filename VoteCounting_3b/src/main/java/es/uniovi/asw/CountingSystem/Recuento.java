@@ -1,4 +1,4 @@
-package es.uniovi.asw.CountingSystem;
+package es.uniovi.asw.countingSystem;
 
 import java.util.ArrayList;
 import java.util.HashMap;

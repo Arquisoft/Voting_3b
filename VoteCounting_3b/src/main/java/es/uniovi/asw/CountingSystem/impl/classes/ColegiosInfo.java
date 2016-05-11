@@ -1,8 +1,8 @@
-package es.uniovi.asw.CountingSystem.impl.classes;
+package es.uniovi.asw.countingSystem.impl.classes;
 
 import java.util.List;
 
-import es.uniovi.asw.CountingSystem.Factories;
+import es.uniovi.asw.countingSystem.Factories;
 import es.uniovi.asw.dbManagement.model.ColegioData;
 
 public class ColegiosInfo {

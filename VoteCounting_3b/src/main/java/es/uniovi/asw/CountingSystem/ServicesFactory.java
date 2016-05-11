@@ -1,4 +1,4 @@
-package es.uniovi.asw.CountingSystem;
+package es.uniovi.asw.countingSystem;
 
 public interface ServicesFactory {
 	

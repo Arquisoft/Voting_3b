@@ -1,9 +1,9 @@
-package es.uniovi.asw.CountingSystem.impl;
+package es.uniovi.asw.countingSystem.impl;
 
 import java.util.List;
 
-import es.uniovi.asw.CountingSystem.IGetVotesInfo;
-import es.uniovi.asw.CountingSystem.impl.classes.VotesInfo;
+import es.uniovi.asw.countingSystem.IGetVotesInfo;
+import es.uniovi.asw.countingSystem.impl.classes.VotesInfo;
 import es.uniovi.asw.dbManagement.model.VotoData;
 
 public class GetVotesInfo implements IGetVotesInfo {
